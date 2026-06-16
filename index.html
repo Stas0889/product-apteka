@@ -3,406 +3,72 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Продуктовая аптечка: мини-гайд по живым растительным продуктам для мягкой поддержки разных систем организма."
-    />
-    <title>Продуктовая аптечка | Urban Queen</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <meta http-equiv="refresh" content="0; url=./product-apteka/" />
+    <title>Urban Queen материалы</title>
+    <link rel="icon" href="./product-apteka/favicon.svg" type="image/svg+xml" />
+    <style>
+      :root {
+        color-scheme: light;
+        --milk: #fbf7ef;
+        --green: #05531d;
+        --teal: #07777b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        min-height: 100svh;
+        margin: 0;
+        place-items: center;
+        color: var(--green);
+        background: radial-gradient(circle at 20% 20%, rgba(7, 119, 123, 0.14), transparent 28rem), var(--milk);
+        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+      }
+
+      main {
+        width: min(520px, calc(100% - 32px));
+        padding: 32px;
+        border: 1px solid rgba(5, 83, 29, 0.14);
+        border-radius: 24px;
+        background: rgba(255, 253, 248, 0.82);
+        box-shadow: 0 24px 70px rgba(45, 67, 38, 0.14);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(30px, 7vw, 46px);
+        line-height: 1;
+      }
+
+      p {
+        margin: 0 0 20px;
+        color: #64705f;
+        font-size: 17px;
+        line-height: 1.5;
+      }
+
+      a {
+        display: inline-flex;
+        min-height: 48px;
+        align-items: center;
+        justify-content: center;
+        padding: 13px 18px;
+        border-radius: 999px;
+        color: #fffdf8;
+        background: var(--teal);
+        font-weight: 800;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
-    <svg class="svg-defs" aria-hidden="true" focusable="false">
-      <symbol id="icon-leaf" viewBox="0 0 24 24">
-        <path d="M20.5 3.5C13.2 3.7 6.9 7.3 4.2 13.1c-1 2.2-1 4.3-.1 5.7.8 1.2 2.2 1.8 3.9 1.5 6.4-1.1 10.3-7.3 12.5-16.8Z" />
-        <path d="M4.2 18.8c3.8-4.6 7.8-7.4 12.9-9.6" />
-      </symbol>
-      <symbol id="icon-spark" viewBox="0 0 24 24">
-        <path d="M12 2.5 14.7 9l6.8 3-6.8 3L12 21.5 9.3 15l-6.8-3 6.8-3L12 2.5Z" />
-      </symbol>
-      <symbol id="icon-arrow" viewBox="0 0 24 24">
-        <path d="M5 12h13" />
-        <path d="m13 6 6 6-6 6" />
-      </symbol>
-    </svg>
-
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Продуктовая аптечка">
-        <span class="brand-mark">
-          <svg aria-hidden="true"><use href="#icon-leaf"></use></svg>
-        </span>
-        <span>Продуктовая аптечка</span>
-      </a>
-      <nav class="nav" aria-label="Основная навигация">
-        <a href="#guide">Органы</a>
-        <a href="#system">Система</a>
-        <a href="#webinar">Вебинар</a>
-        <a href="#program">Программа</a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero section-shell">
-        <div class="hero-copy">
-          <p class="eyebrow">
-            <svg aria-hidden="true"><use href="#icon-spark"></use></svg>
-            мини-гайд по живой еде
-          </p>
-          <h1><span>ПРОДУКТОВАЯ</span><span>АПТЕЧКА</span></h1>
-          <p class="hero-lead">Какие продукты помогают поддерживать разные органы организма</p>
-          <div class="hero-text">
-            <p>Иногда организму нужно не больше лекарств.</p>
-            <p>Иногда ему нужно больше правильной еды.</p>
-            <p>Вот моя любимая шпаргалка из живых растительных продуктов.</p>
-          </div>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#guide">
-              Смотреть аптечку
-              <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
-            </a>
-            <a class="button button-ghost" href="#webinar">На вебинар</a>
-          </div>
-        </div>
-
-        <figure class="hero-visual" aria-label="Овощи, зелень и фрукты">
-          <img src="./assets/cover-food.webp" alt="Свежие овощи, зелень, ягоды и фрукты" />
-          <figcaption>
-            <span>12 систем организма</span>
-            <span>75+ живых продуктов</span>
-          </figcaption>
-        </figure>
-      </section>
-
-      <section class="intro-strip" aria-label="Ключевая идея">
-        <div class="intro-item">
-          <strong>Натурально</strong>
-          <span>овощи, зелень, ягоды, семена и ферментированные продукты</span>
-        </div>
-        <div class="intro-item">
-          <strong>Практично</strong>
-          <span>короткие списки, которые удобно сохранить и открыть с телефона</span>
-        </div>
-        <div class="intro-item">
-          <strong>Бережно</strong>
-          <span>про мягкую поддержку рациона, без обещаний лечения</span>
-        </div>
-      </section>
-
-      <section id="guide" class="guide section-shell">
-        <div class="section-heading">
-          <p class="eyebrow">
-            <svg aria-hidden="true"><use href="#icon-leaf"></use></svg>
-            живая продуктовая карта
-          </p>
-          <h2>Органы и продукты</h2>
-          <p>Выберите систему или найдите продукт, который хотите добавить в рацион.</p>
-        </div>
-
-        <div class="guide-tools" aria-label="Фильтры продуктов">
-          <div class="filter-row" role="list" aria-label="Фильтр по системе">
-            <button class="filter-button is-active" type="button" data-filter="all">Все</button>
-            <button class="filter-button" type="button" data-filter="detox">Очищение</button>
-            <button class="filter-button" type="button" data-filter="energy">Энергия</button>
-            <button class="filter-button" type="button" data-filter="beauty">Красота</button>
-            <button class="filter-button" type="button" data-filter="immunity">Иммунитет</button>
-          </div>
-          <label class="search-box">
-            <span>Поиск</span>
-            <input id="productSearch" type="search" placeholder="Например: свёкла, зелень, ягоды" autocomplete="off" />
-          </label>
-        </div>
-
-        <p class="result-count" aria-live="polite"><span id="visibleCount">12</span> карточек</p>
-
-        <div class="organ-grid">
-          <article class="organ-card" data-area="detox" data-products="расторопша свёкла редька руккола одуванчик артишок куркума печень">
-            <div class="organ-photo">
-              <img src="./assets/cards/liver.webp" alt="Расторопша, свёкла, редька, руккола, одуванчик, артишок и куркума" />
-            </div>
-            <div class="organ-body">
-              <span class="organ-kicker">мягкая поддержка</span>
-              <h3>Печень</h3>
-              <ul class="product-list">
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Расторопша</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Свёкла</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Редька</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Руккола</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Одуванчик</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Артишок</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Куркума</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="organ-card" data-area="detox" data-products="редис дайкон грейпфрут лимон руккола листья горчицы цикорий желчный пузырь">
-            <div class="organ-photo">
-              <img src="./assets/cards/gallbladder.webp" alt="Редис, дайкон, грейпфрут, лимон, руккола, листья горчицы и цикорий" />
-            </div>
-            <div class="organ-body">
-              <span class="organ-kicker">горечи и цитрусы</span>
-              <h3>Желчный пузырь</h3>
-              <ul class="product-list">
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Редис</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Дайкон</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Грейпфрут</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Лимон</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Руккола</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Листья горчицы</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Цикорий</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="organ-card" data-area="energy" data-products="квашеные овощи зелёная гречка семена льна папайя инжир чернослив проростки кишечник">
-            <div class="organ-photo">
-              <img src="./assets/cards/gut.webp" alt="Квашеные овощи, зелёная гречка, семена льна, папайя, инжир, чернослив и проростки" />
-            </div>
-            <div class="organ-body">
-              <span class="organ-kicker">микробиом и клетчатка</span>
-              <h3>Кишечник</h3>
-              <ul class="product-list">
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Квашеные овощи</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Зелёная гречка</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Семена льна</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Папайя</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Инжир</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Чернослив</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Проростки</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="organ-card" data-area="energy" data-products="топинамбур брокколи проростки пажитника черника корица амла поджелудочная железа">
-            <div class="organ-photo">
-              <img src="./assets/cards/pancreas.webp" alt="Топинамбур, брокколи, проростки пажитника, черника, корица и амла" />
-            </div>
-            <div class="organ-body">
-              <span class="organ-kicker">ровная энергия</span>
-              <h3>Поджелудочная железа</h3>
-              <ul class="product-list">
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Топинамбур</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Брокколи</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Проростки пажитника</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Черника</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Корица</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Амла</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="organ-card" data-area="energy" data-products="гранат свёкла чеснок сельдерей ягоды зелень конопляные семена сердце сосуды">
-            <div class="organ-photo">
-              <img src="./assets/cards/heart-vessels.webp" alt="Гранат, свёкла, чеснок, сельдерей, ягоды, зелень и конопляные семена" />
-            </div>
-            <div class="organ-body">
-              <span class="organ-kicker">ритм и сосуды</span>
-              <h3>Сердце и сосуды</h3>
-              <ul class="product-list">
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Гранат</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Свёкла</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Чеснок</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Сельдерей</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Ягоды</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Зелень</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Конопляные семена</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="organ-card" data-area="detox" data-products="арбуз огурцы петрушка сельдерей кокосовая вода спаржа почки">
-            <div class="organ-photo">
-              <img src="./assets/cards/kidneys.webp" alt="Арбуз, огурцы, петрушка, сельдерей, кокосовая вода и спаржа" />
-            </div>
-            <div class="organ-body">
-              <span class="organ-kicker">водный баланс</span>
-              <h3>Почки</h3>
-              <ul class="product-list">
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Арбуз</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Огурцы</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Петрушка</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Сельдерей</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Кокосовая вода</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Спаржа</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="organ-card" data-area="immunity" data-products="редька хрен чабрец имбирь лук чеснок лёгкие">
-            <div class="organ-photo">
-              <img src="./assets/cards/lungs.webp" alt="Редька, хрен, чабрец, имбирь, лук и чеснок" />
-            </div>
-            <div class="organ-body">
-              <span class="organ-kicker">тепло и ароматные травы</span>
-              <h3>Лёгкие</h3>
-              <ul class="product-list">
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Редька</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Хрен</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Чабрец</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Имбирь</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Лук</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Чеснок</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="organ-card" data-area="energy" data-products="морские водоросли бразильский орех тыквенные семечки клюква щитовидная железа">
-            <div class="organ-photo">
-              <img src="./assets/cards/thyroid.webp" alt="Морские водоросли, бразильский орех, тыквенные семечки и клюква" />
-            </div>
-            <div class="organ-body">
-              <span class="organ-kicker">минералы</span>
-              <h3>Щитовидная железа</h3>
-              <ul class="product-list">
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Морские водоросли</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Бразильский орех</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Тыквенные семечки</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Клюква</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="organ-card" data-area="beauty" data-products="кунжут мак зелень конопляные семена ягоды болгарский перец брокколи суставы позвоночник">
-            <div class="organ-photo">
-              <img src="./assets/cards/joints-spine.webp" alt="Кунжут, мак, зелень, конопляные семена, ягоды, болгарский перец и брокколи" />
-            </div>
-            <div class="organ-body">
-              <span class="organ-kicker">минералы и цвет</span>
-              <h3>Суставы и позвоночник</h3>
-              <ul class="product-list">
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Кунжут</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Мак</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Зелень</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Конопляные семена</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Ягоды</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Болгарский перец</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Брокколи</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="organ-card" data-area="beauty" data-products="авокадо огурец ягоды манго алоэ зелень кожа">
-            <div class="organ-photo">
-              <img src="./assets/cards/skin.webp" alt="Авокадо, огурец, ягоды, манго, алоэ и зелень" />
-            </div>
-            <div class="organ-body">
-              <span class="organ-kicker">сияние и увлажнение</span>
-              <h3>Кожа</h3>
-              <ul class="product-list">
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Авокадо</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Огурец</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Ягоды</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Манго</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Алоэ</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Зелень</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="organ-card" data-area="energy" data-products="грецкий орех черника какао конопляные семена шпинат морские водоросли мозг нервная система">
-            <div class="organ-photo">
-              <img src="./assets/cards/brain-nerves.webp" alt="Грецкий орех, черника, какао, конопляные семена, шпинат и морские водоросли" />
-            </div>
-            <div class="organ-body">
-              <span class="organ-kicker">фокус и спокойствие</span>
-              <h3>Мозг и нервная система</h3>
-              <ul class="product-list">
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Грецкий орех</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Черника</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Какао</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Конопляные семена</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Шпинат</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Морские водоросли</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="organ-card" data-area="immunity" data-products="чеснок имбирь куркума грибы ягоды проростки иммунитет">
-            <div class="organ-photo">
-              <img src="./assets/cards/immunity.webp" alt="Чеснок, имбирь, куркума, грибы, ягоды и проростки" />
-            </div>
-            <div class="organ-body">
-              <span class="organ-kicker">ежедневная защита</span>
-              <h3>Иммунитет</h3>
-              <ul class="product-list">
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Чеснок</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Имбирь</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Куркума</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Грибы</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Ягоды</li>
-                <li><svg aria-hidden="true"><use href="#icon-leaf"></use></svg>Проростки</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="system" class="system-section section-shell">
-        <div class="system-copy">
-          <p class="eyebrow">
-            <svg aria-hidden="true"><use href="#icon-spark"></use></svg>
-            главное помнить
-          </p>
-          <h2>Организм — это единая система</h2>
-          <div class="system-text">
-            <p>Самое удивительное, что многие из этих продуктов работают сразу на несколько органов одновременно.</p>
-            <p>Именно поэтому в природе нет отдельных продуктов «для печени», «для кожи» или «для кишечника».</p>
-            <p>Восстановление часто начинается не с таблетки, а с тарелки.</p>
-          </div>
-        </div>
-        <figure class="system-visual">
-          <img src="./assets/body-system.webp" alt="Иллюстрация взаимосвязи органов организма и растительного питания" />
-        </figure>
-      </section>
-
-      <section id="webinar" class="webinar-section">
-        <div class="cta-shell">
-          <div>
-            <p class="eyebrow">
-              <svg aria-hidden="true"><use href="#icon-spark"></use></svg>
-              бесплатный вебинар
-            </p>
-            <h2>«Дети Солнца: что происходит с телом через 30 дней живой еды»</h2>
-          </div>
-          <ul class="check-list">
-            <li>Что начинает происходить с организмом при переходе на живое питание</li>
-            <li>Какие изменения чаще всего замечают люди уже в первый месяц</li>
-            <li>Какие ошибки мешают получить результат</li>
-            <li>Как безопасно внедрять больше живой еды в рацион</li>
-          </ul>
-          <a class="button button-primary" href="https://t.me/UrbanQueenBot?start=c1781514461580-ds" target="_blank" rel="noreferrer">
-            Зарегистрироваться
-            <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
-          </a>
-        </div>
-      </section>
-
-      <section id="program" class="program-section section-shell">
-        <div class="program-card">
-          <div>
-            <p class="eyebrow">
-              <svg aria-hidden="true"><use href="#icon-leaf"></use></svg>
-              практика на 21 день
-            </p>
-            <h2>Хотите попробовать систему на практике?</h2>
-            <p>Программа живого растительного исцеляющего питания на 21 день.</p>
-            <p class="start-date">Старт — 28 июня</p>
-          </div>
-          <a class="button button-primary" href="https://urbanqueen.ru/syroed" target="_blank" rel="noreferrer">
-            Узнать подробнее
-            <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
-          </a>
-        </div>
-      </section>
+    <main>
+      <h1>Urban Queen</h1>
+      <p>Переходим к материалу «Продуктовая аптечка».</p>
+      <a href="./product-apteka/">Открыть материал</a>
     </main>
-
-    <footer class="site-footer">
-      <p>Urban Queen · Продуктовая аптечка</p>
-      <p>Материал носит информационный характер и не заменяет консультацию специалиста.</p>
-    </footer>
-
-    <a class="mobile-cta" href="https://t.me/UrbanQueenBot?start=c1781514461580-ds" target="_blank" rel="noreferrer">
-      На вебинар
-    </a>
-
-    <script src="./script.js"></script>
   </body>
 </html>

@@ -391,9 +391,14 @@ h3 { line-height: 1.25; }
 }
 .panorama blockquote { max-width: 900px; margin: 0 0 42px; color: var(--white); font-family: "Tenor Sans"; font-size: clamp(2rem, 4vw, 4.4rem); line-height: 1.16; }
 
+.guide-list { display: flex; flex-direction: column; gap: 120px; }
 .guide-grid { display: grid; grid-template-columns: .9fr 1fr; align-items: center; gap: 10vw; }
+.guide-grid-reverse { grid-template-columns: 1fr .9fr; }
+.guide-grid-reverse .guide-photo { order: 2; }
+.guide-grid-reverse .guide-copy { order: 1; }
 .guide-photo { position: relative; }
 .guide-photo img { height: 680px; object-fit: cover; object-position: 50% 32%; filter: saturate(.72) contrast(1.02); }
+.guide-photo-wide img { object-position: 50% 50%; }
 .guide-photo span { position: absolute; right: -28px; bottom: 50px; padding: 14px 20px; background: var(--gold); color: var(--ink); font-size: .67rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .guide-copy h2 { margin-bottom: 20px; }
 .guide-role { margin-bottom: 40px; color: var(--gold-light); font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
@@ -534,7 +539,9 @@ h3 { line-height: 1.25; }
   .panorama { height: 600px; }
   .panorama-content { width: calc(100% - 36px); }
   .panorama blockquote { margin-bottom: 30px; font-size: 2.05rem; }
-  .guide-grid { grid-template-columns: 1fr; gap: 60px; }
+  .guide-list { gap: 80px; }
+  .guide-grid, .guide-grid-reverse { grid-template-columns: 1fr; gap: 60px; }
+  .guide-grid-reverse .guide-photo, .guide-grid-reverse .guide-copy { order: initial; }
   .guide-photo img { height: 520px; }
   .guide-photo span { right: -8px; bottom: 25px; }
   .guide-quote { padding-left: 25px; }

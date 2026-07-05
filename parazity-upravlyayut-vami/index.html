@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Паразиты управляют вами прямо сейчас? — тест от Наташи Сведовой</title>
+  <meta name="description" content="Тест, который помогает увидеть возможные признаки паразитарной нагрузки. Рецепт антипаразитарных конфет и приглашение в клуб «Ведание».">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#F5F3EF;
+      --card:#FFFFFF;
+      --text:#2E2E2E;
+      --muted:#6d6761;
+      --accent:#07777B;
+      --accent-2:#06A2B8;
+      --accent-soft:rgba(6,162,184,.10);
+      --accent-soft-2:rgba(7,119,123,.10);
+      --border:rgba(46,46,46,.11);
+      --shadow:0 24px 70px rgba(46,46,46,.10);
+      --radius:28px;
+      --radius-small:18px;
+      --container:1180px;
+    }
+
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:'Raleway',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+      font-size:18px;
+      line-height:1.58;
+      overflow-x:hidden;
+    }
+    body:before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      background:
+        radial-gradient(circle at 12% 5%, rgba(6,162,184,.10), transparent 25%),
+        radial-gradient(circle at 86% 18%, rgba(7,119,123,.12), transparent 22%),
+        radial-gradient(circle at 50% 100%, rgba(6,162,184,.06), transparent 28%);
+      z-index:-1;
+    }
+    img{max-width:100%;display:block;}
+    a{color:inherit;}
+    .container{width:min(var(--container), calc(100% - 40px));margin:0 auto;}
+    .section{padding:82px 0;position:relative;}
+    .section--compact{padding:58px 0;}
+    .section--no-top{padding-top:0;}
+    .eyebrow{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding:8px 14px;
+      border-radius:999px;
+      color:var(--accent);
+      background:rgba(255,255,255,.74);
+      border:1px solid var(--border);
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .eyebrow:before{
+      content:"";
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      box-shadow:0 0 0 6px rgba(6,162,184,.11);
+    }
+    h1,h2,h3,h4{
+      font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+      line-height:1.06;
+      color:var(--text);
+      margin:0;
+      letter-spacing:-.035em;
+    }
+    h1{font-size:clamp(38px,4.45vw,68px);font-weight:800;text-transform:uppercase;}
+    h2{font-size:clamp(30px,3.1vw,48px);font-weight:800;}
+    h3{font-size:clamp(22px,2vw,30px);font-weight:750;}
+    h4{font-size:20px;font-weight:750;}
+
+    .eyebrow + h1,
+    .eyebrow + h2,
+    .eyebrow + h3{margin-top:20px;}
+    h1 + p,
+    h2 + p,
+    h3 + p{margin-top:18px;}
+    h2 + ul,
+    h2 + .recipe-list,
+    h2 + .steps{margin-top:22px;}
+    .card h2,
+    .highlight-box h2{font-size:clamp(28px,2.55vw,42px);}
+    .card h3,
+    .highlight-box h3{font-size:clamp(22px,1.85vw,30px);}
+
+    p{margin:0 0 18px;}
+    .lead{font-size:clamp(20px,2.1vw,26px);line-height:1.45;color:var(--muted);font-weight:500;}
+    .sublead{font-size:20px;color:var(--muted);}
+    .small{font-size:14px;color:var(--muted);}
+    .accent{color:var(--accent);}
+    .accent-2{color:var(--accent-2);}
+    .gradient-text{background:linear-gradient(135deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent;}
+    .btn{
+      display:inline-flex;
+      justify-content:center;
+      align-items:center;
+      gap:10px;
+      min-height:58px;
+      padding:17px 28px;
+      border:0;
+      border-radius:999px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#fff;
+      text-decoration:none;
+      font-family:'Montserrat',sans-serif;
+      font-weight:700;
+      font-size:15px;
+      letter-spacing:.01em;
+      cursor:pointer;
+      box-shadow:0 16px 36px rgba(7,119,123,.23);
+      transition:transform .2s ease, box-shadow .2s ease, filter .2s ease;
+      text-align:center;
+    }
+    .btn:hover{transform:translateY(-2px);box-shadow:0 20px 46px rgba(7,119,123,.28);filter:saturate(1.08);}
+    .btn--outline{
+      background:rgba(255,255,255,.70);
+      color:var(--accent);
+      border:1px solid rgba(7,119,123,.28);
+      box-shadow:none;
+    }
+    .btn--outline:hover{box-shadow:0 12px 30px rgba(7,119,123,.10);}
+    .btn-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:30px;}
+    .header{
+      position:sticky;
+      top:0;
+      z-index:20;
+      backdrop-filter:blur(20px);
+      background:rgba(245,243,239,.78);
+      border-bottom:1px solid rgba(46,46,46,.08);
+    }
+    .header__inner{
+      width:min(var(--container), calc(100% - 40px));
+      margin:0 auto;
+      min-height:78px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:800;letter-spacing:-.02em;}
+    .brand img{width:48px;height:48px;border-radius:50%;}
+    .nav{display:flex;align-items:center;gap:22px;color:var(--muted);font-size:15px;font-weight:600;}
+    .nav a{text-decoration:none;transition:color .18s ease;}
+    .nav a:hover{color:var(--accent);}
+    .nav .btn{min-height:44px;padding:12px 18px;font-size:13px;}
+
+    .hero{
+      min-height:calc(100vh - 78px);
+      display:grid;
+      align-items:center;
+      padding:56px 0 76px;
+    }
+    .hero__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(390px,0.78fr);gap:48px;align-items:center;}
+    .hero__text{position:relative;z-index:2;}
+    .hero h1{margin-bottom:24px;max-width:760px;}
+    .hero__card{
+      padding:22px;
+      border-radius:34px;
+      background:rgba(255,255,255,.52);
+      border:1px solid rgba(255,255,255,.75);
+      box-shadow:var(--shadow);
+      transform:rotate(1deg);
+    }
+    .hero__card-inner{
+      overflow:hidden;
+      border-radius:26px;
+      position:relative;
+      aspect-ratio:4/5;
+    }
+    .hero__card-inner img{width:100%;height:100%;object-fit:cover;}
+    .hero__card-inner:after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(0deg, rgba(7,119,123,.20), transparent 45%);
+      pointer-events:none;
+    }
+    .hero__note{
+      display:grid;
+      grid-template-columns:48px 1fr;
+      gap:14px;
+      align-items:center;
+      max-width:520px;
+      margin-top:28px;
+      padding:16px 18px;
+      border-radius:20px;
+      background:rgba(255,255,255,.70);
+      border:1px solid var(--border);
+    }
+    .hero__note img{width:48px;height:48px;border-radius:50%;}
+    .hero__note strong{font-family:'Montserrat',sans-serif;color:var(--accent);}
+
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+    .two-col--top{align-items:stretch;}
+    .two-col--top > .card,
+    .two-col--top > .highlight-box,
+    .two-col--top > .quote-box{height:100%;}
+    .copy h2{margin-bottom:26px;}
+    .copy h3{margin-top:20px;margin-bottom:16px;}
+    .copy p:last-child{margin-bottom:0;}
+    .card{
+      border-radius:var(--radius);
+      background:rgba(255,255,255,.72);
+      border:1px solid rgba(255,255,255,.8);
+      box-shadow:0 18px 55px rgba(46,46,46,.08);
+      padding:32px;
+    }
+    .image-card{
+      border-radius:34px;
+      padding:16px;
+      background:rgba(255,255,255,.58);
+      border:1px solid rgba(255,255,255,.75);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .image-card img{border-radius:24px;width:100%;height:auto;object-fit:cover;}
+    .highlight-box{
+      padding:32px;
+      border-radius:var(--radius);
+      background:linear-gradient(135deg,rgba(7,119,123,.10),rgba(6,162,184,.10));
+      border:1px solid rgba(7,119,123,.18);
+    }
+    .quote-box{
+      position:relative;
+      padding:34px 34px 34px 78px;
+      border-radius:var(--radius);
+      background:#fff;
+      border:1px solid var(--border);
+      box-shadow:0 18px 55px rgba(46,46,46,.07);
+    }
+    .quote-box:before{
+      content:"“";
+      position:absolute;
+      left:28px;
+      top:16px;
+      font-family:'Montserrat',sans-serif;
+      font-size:72px;
+      line-height:1;
+      color:var(--accent-2);
+      opacity:.52;
+    }
+    .divider-image{
+      min-height:360px;
+      border-radius:38px;
+      background-image:linear-gradient(90deg, rgba(245,243,239,.96) 0%, rgba(245,243,239,.68) 42%, rgba(245,243,239,.10) 100%), url('assets/herbs-wide.webp');
+      background-size:cover;
+      background-position:center right;
+      display:flex;
+      align-items:center;
+      padding:52px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      border:1px solid rgba(255,255,255,.8);
+    }
+    .divider-image .copy{max-width:630px;}
+
+    .pill-list{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 0;padding:0;list-style:none;}
+    .pill-list li{padding:10px 14px;border-radius:999px;background:#fff;border:1px solid var(--border);font-weight:600;color:var(--accent);}
+    .dash-list{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px;}
+    .dash-list li{position:relative;padding-left:28px;}
+    .dash-list li:before{content:"—";position:absolute;left:0;color:var(--accent);font-weight:800;}
+    .program-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:34px;grid-auto-rows:1fr;}
+    .program-item{background:#fff;border:1px solid var(--border);border-radius:22px;padding:24px;height:100%;display:flex;flex-direction:column;}
+    .program-item strong{font-family:'Montserrat',sans-serif;color:var(--accent);display:block;margin-bottom:8px;}
+
+    .test-wrap{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:28px;align-items:start;margin-top:38px;}
+    .test-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+    .test-group{background:#fff;border:1px solid var(--border);border-radius:var(--radius-small);padding:24px;}
+    .test-group h3{font-size:24px;margin-bottom:18px;letter-spacing:-.02em;}
+    .check-item{display:grid;grid-template-columns:26px 1fr;gap:12px;align-items:start;padding:12px 0;border-top:1px solid rgba(46,46,46,.08);cursor:pointer;font-size:16px;line-height:1.45;}
+    .check-item:first-of-type{border-top:0;}
+    .check-item input{width:21px;height:21px;margin:1px 0 0;accent-color:var(--accent);cursor:pointer;}
+    .result-panel{
+      position:sticky;
+      top:102px;
+      background:linear-gradient(145deg,#fff,rgba(255,255,255,.78));
+      border:1px solid rgba(7,119,123,.20);
+      box-shadow:var(--shadow);
+      border-radius:var(--radius);
+      padding:28px;
+    }
+    .counter{display:flex;align-items:flex-end;gap:10px;margin:8px 0 18px;}
+    .counter__num{font-family:'Montserrat',sans-serif;font-size:64px;font-weight:800;line-height:.9;color:var(--accent);letter-spacing:-.06em;}
+    .counter__label{color:var(--muted);font-weight:600;margin-bottom:6px;}
+    .result-panel h3{font-size:26px;margin-bottom:12px;}
+    .result-panel .btn{width:100%;margin-top:16px;}
+
+    .results-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px;grid-auto-rows:1fr;}
+    .result-card{background:#fff;border:1px solid var(--border);border-radius:22px;padding:24px;height:100%;}
+    .result-card strong{display:block;font-family:'Montserrat',sans-serif;font-size:20px;color:var(--accent);margin-bottom:10px;}
+    .recipe-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:38px;align-items:center;margin-top:38px;}
+    .recipe-list{display:grid;gap:12px;margin:0;padding:0;list-style:none;}
+    .recipe-list li{padding:15px 18px;border:1px solid var(--border);border-radius:16px;background:#fff;}
+    .steps{counter-reset:step;display:grid;gap:14px;margin-top:24px;}
+    .step{counter-increment:step;display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;background:#fff;border:1px solid var(--border);border-radius:18px;padding:18px;}
+    .step:before{content:counter(step);width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;font-family:'Montserrat',sans-serif;font-weight:800;}
+    .price-card{position:relative;overflow:hidden;border-radius:38px;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;padding:54px;box-shadow:0 26px 80px rgba(7,119,123,.26);}
+    .price-card:before{content:"";position:absolute;right:-120px;top:-120px;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.13);}
+    .price-card h2,.price-card h3{color:#fff;}
+    .price-card .btn{background:#fff;color:var(--accent);box-shadow:0 16px 34px rgba(0,0,0,.12);}
+    .price{font-family:'Montserrat',sans-serif;font-size:clamp(50px,7vw,92px);font-weight:800;line-height:1;letter-spacing:-.07em;margin:22px 0 12px;}
+    .price span{font-size:.32em;letter-spacing:-.02em;}
+    .footer{padding:48px 0;border-top:1px solid rgba(46,46,46,.08);color:var(--muted);}
+    .footer__inner{display:flex;flex-direction:column;align-items:flex-start;gap:12px;}
+    .footer__inner p{margin:0;}
+    .footer__inner a:hover{color:var(--accent);}
+    .footer .brand{color:var(--text);}
+    .mobile-cta{
+      display:none;
+      position:fixed;
+      left:12px;
+      right:12px;
+      bottom:12px;
+      z-index:30;
+    }
+    .mobile-cta .btn{width:100%;box-shadow:0 16px 42px rgba(7,119,123,.35);}
+
+    @media (max-width: 1040px){
+      .hero__grid,.two-col,.recipe-grid{grid-template-columns:1fr;}
+      .hero__card{max-width:580px;margin:0 auto;}
+      .test-wrap{grid-template-columns:1fr;}
+      .result-panel{position:relative;top:auto;}
+      .results-grid{grid-template-columns:repeat(2,1fr);}
+      .program-list{grid-template-columns:1fr;}
+    }
+    @media (max-width: 820px){
+      body{font-size:17px;line-height:1.58;}
+      h1{font-size:clamp(36px,11vw,54px);}
+      h2{font-size:clamp(30px,9vw,44px);}
+      h3{font-size:clamp(22px,6vw,30px);}
+      .container,.header__inner{width:min(100% - 26px, var(--container));}
+      .section{padding:58px 0;}
+      .section--compact{padding:44px 0;}
+      .nav{display:none;}
+      .header__inner{min-height:66px;}
+      .brand img{width:42px;height:42px;}
+      .hero{padding:42px 0 62px;min-height:auto;}
+      .hero__grid{gap:34px;}
+      .hero__card{padding:10px;border-radius:24px;transform:none;}
+      .hero__card-inner{border-radius:18px;}
+      .lead{font-size:19px;}
+      .btn-row{align-items:stretch;}
+      .btn-row .btn{width:100%;}
+      .card,.highlight-box,.quote-box{padding:24px;border-radius:22px;}
+      .quote-box{padding-left:56px;}
+      .quote-box:before{left:18px;font-size:58px;}
+      .test-groups{grid-template-columns:1fr;}
+      .results-grid{grid-template-columns:1fr;}
+      .divider-image{min-height:auto;padding:30px;border-radius:26px;background-image:linear-gradient(90deg, rgba(245,243,239,.96), rgba(245,243,239,.82)), url('assets/herbs-wide.webp');}
+      .price-card{padding:34px 24px;border-radius:26px;}
+      .footer__inner{flex-direction:column;align-items:flex-start;}
+      .mobile-cta{display:block;}
+      body{padding-bottom:82px;}
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a class="brand" href="#top" aria-label="Ведание">
+        <img src="assets/logo.png" alt="Логотип Ведание">
+        <span>Ведание</span>
+      </a>
+      <nav class="nav" aria-label="Навигация">
+        <a href="#test">Тест</a>
+        <a href="#recipe">Рецепт</a>
+        <a href="#club">Клуб</a>
+        <a class="btn" href="https://vedanie.urban-queen.com/">Войти в клуб</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <span class="eyebrow">Тест от натуропата</span>
+          <h1>Паразиты управляют вами прямо сейчас?</h1>
+          <p class="lead">Тест, который меняет всё. Посчитайте признаки, получите первый рецепт для мягкого очищения и поймите, что уже показывает ваше тело.</p>
+          <div class="btn-row">
+            <a class="btn" href="#test">Пройти тест</a>
+            <a class="btn btn--outline" href="#recipe">Получить рецепт</a>
+          </div>
+          <div class="hero__note">
+            <img src="assets/logo.png" alt="Ведание">
+            <p class="small"><strong>Наташа Сведовая</strong><br>Натуропат, 13 лет на живом питании. Автор системы «Ведание».</p>
+          </div>
+        </div>
+        <div class="hero__card" aria-hidden="true">
+          <div class="hero__card-inner">
+            <img src="assets/hero.webp" alt="Наташа Сведовая с корзиной трав">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--no-top">
+      <div class="container two-col">
+        <div class="copy">
+          <span class="eyebrow">Сначала — про отношения</span>
+          <h2>Чистое тело — основа выбора</h2>
+          <p>Вы здоровы, когда живёте в чистом теле и у вас чистое сознание.</p>
+          <p>Но посмотрите, что происходит внутри прямо сейчас.</p>
+          <p>У вас могут быть паразитарные отношения. Буквально.</p>
+          <p>В вашем теле живут существа, которые берут всё — вашу энергию, ваши питательные вещества, ваши гормоны — и не дают ничего взамен.</p>
+          <p>Гельминты, одноклеточные, грибы.</p>
+          <p>Они не спрашивают разрешения. Они просто берут.</p>
+        </div>
+        <div class="highlight-box">
+          <h3>Это не метафора. Это физиология.</h3>
+          <p>Если организм зашлакован и внутри происходят паразитарные отношения, то и снаружи гармонию найти сложно.</p>
+          <p>Тело, которое живёт в состоянии постоянного паразитирования, привлекает в жизнь то же самое.</p>
+          <p>Чистое тело — это основа. Не для красоты. Для того, чтобы выбирать: с кем быть, что есть, как жить.</p>
+          <p><strong>Из силы, а не из истощения.</strong></p>
+          <div class="btn-row">
+            <a class="btn" href="#test">Проверить себя</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container">
+        <div class="divider-image">
+          <div class="copy">
+            <span class="eyebrow">Стоп</span>
+            <h2>«У меня точно нет паразитов»</h2>
+            <p>Это говорит почти каждый человек, которого я встречаю.</p>
+            <p>И почти каждый ошибается.</p>
+            <p>По данным ВОЗ, более 4,5 миллиарда людей прямо сейчас заражены паразитами. Это больше половины населения Земли.</p>
+            <p>Вы моете руки. Едите в проверенных местах. Не контактируете с животными. И всё равно можете быть заражены с вероятностью выше 80%.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container two-col two-col--top">
+        <div class="card">
+          <h3>Почему?</h3>
+          <p>Потому что паразиты передаются через воздух, через рукопожатие, через поцелуй, через немытые фрукты, через недожаренное мясо, через воду, через почву на пляже.</p>
+          <p>Защититься полностью — невозможно.</p>
+        </div>
+        <div class="card">
+          <h3>Анализы могут не показать</h3>
+          <p>Стандартный анализ кала выявляет меньше 20% паразитов.</p>
+          <p>Остальные 80% — ваше тело знает. Анализ — нет.</p>
+          <p>Именно поэтому врач говорит: «Всё в норме», — а вы чувствуете, что что-то не так.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="test">
+      <div class="container">
+        <div class="copy" style="max-width:820px;">
+          <span class="eyebrow">Тест</span>
+          <h2>Посчитайте, сколько пунктов про вас</h2>
+          <p class="lead">Поставьте галочку напротив каждого пункта, который узнаёте. Будьте честны с собой.</p>
+        </div>
+
+        <div class="test-wrap">
+          <div class="test-groups" id="checklist">
+            <div class="test-group">
+              <h3>Про еду и пищеварение</h3>
+              <label class="check-item"><input type="checkbox"><span>После еды хочется сладкого — даже когда только поели.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Вздутие и газы появляются без очевидной причины.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Тяжесть в правом боку после жирной еды.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Горечь во рту по утрам.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Стул нестабильный — то запор, то диарея.</span></label>
+            </div>
+
+            <div class="test-group">
+              <h3>Про тело и самочувствие</h3>
+              <label class="check-item"><input type="checkbox"><span>Хроническая усталость — даже после полноценного сна.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Скрип зубами ночью — ваш или вашего ребёнка.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Зуд в разных местах тела — особенно ночью.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Суставы хрустят или болят без травм.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Вес не уходит даже при правильном питании — или уходит без причины.</span></label>
+            </div>
+
+            <div class="test-group">
+              <h3>Про кожу и внешность</h3>
+              <label class="check-item"><input type="checkbox"><span>Тёмные круги под глазами, которые не проходят.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Кожные высыпания, которые появляются и исчезают.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Пигментные пятна, которых раньше не было.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Волосы выпадают больше, чем обычно.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Лицо отёкшее по утрам.</span></label>
+            </div>
+
+            <div class="test-group">
+              <h3>Про настроение и голову</h3>
+              <label class="check-item"><input type="checkbox"><span>Тревога и раздражительность без причины.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Просыпаетесь в 2–3 часа ночи и не можете уснуть.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Туман в голове — трудно сосредоточиться.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Перепады настроения, которые вы не контролируете.</span></label>
+              <label class="check-item"><input type="checkbox"><span>Ощущение, что кто-то съедает вашу энергию.</span></label>
+            </div>
+          </div>
+
+          <aside class="result-panel" aria-live="polite">
+            <span class="eyebrow">Ваш результат</span>
+            <div class="counter"><span class="counter__num" id="count">0</span><span class="counter__label">галочек</span></div>
+            <h3 id="result-title">0–2 галочки</h3>
+            <p id="result-text">Хорошая профилактика никогда не помешает. Тело работает в ресурсе — поддержите его.</p>
+            <a class="btn" href="#recipe">Получить первый шаг</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container">
+        <div class="copy" style="max-width:820px;">
+          <h2>Результат</h2>
+        </div>
+        <div class="results-grid">
+          <div class="result-card"><strong>0–2 галочки</strong><p>Хорошая профилактика никогда не помешает. Тело работает в ресурсе — поддержите его.</p></div>
+          <div class="result-card"><strong>3–5 галочек</strong><p>Паразиты, скорее всего, есть. Тело уже сигнализирует. Самое время начать мягкую чистку.</p></div>
+          <div class="result-card"><strong>6–10 галочек</strong><p>Высокая вероятность, что паразиты активно влияют на ваше самочувствие, гормоны и настроение. Нужна системная программа.</p></div>
+          <div class="result-card"><strong>Больше 10</strong><p>Паразиты управляют вами. Это не преувеличение — это то, что я вижу в тысячах анкет своих учеников. Ваше тело просит помощи прямо сейчас.</p></div>
+        </div>
+        <div class="btn-row">
+          <a class="btn" href="#recipe">Начать мягкую чистку</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="recipe">
+      <div class="container recipe-grid">
+        <div class="image-card">
+          <img src="assets/recipe.webp" alt="Антипаразитарные конфеты из фиников, тыквенных семечек и гвоздики">
+        </div>
+        <div class="copy">
+          <span class="eyebrow">Первый шаг</span>
+          <h2>Что можно сделать прямо сегодня</h2>
+          <p>Один безопасный шаг, который начнёт менять ситуацию.</p>
+          <p>Без таблеток. Без голодовки. Без стресса для тела.</p>
+          <h3>Антипаразитарные конфеты</h3>
+          <p>Рецепт, который я даю своей дочке.</p>
+          <p>Тыквенные семечки выгоняют паразитов. Гвоздика уничтожает их яйца. Финики дают телу энергию для детокса.</p>
+          <p><strong>Вместе они работают мягко, но системно.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container two-col two-col--top">
+        <div class="card">
+          <h2>Состав</h2>
+          <ul class="recipe-list">
+            <li>Семена тыквы штирийской — 200 г</li>
+            <li>Семена гвоздики — 50 г</li>
+            <li>Финики — 2 горсти</li>
+            <li>Сырое какао — для обвалки</li>
+            <li>Сироп топинамбура или монкфрута — по желанию</li>
+            <li>Несколько капель съедобного эфирного масла лимона — по желанию</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Как делать</h2>
+          <div class="steps">
+            <div class="step">Измельчите семена тыквы и гвоздику в муку.</div>
+            <div class="step">Смешайте с финиками до липкой однородной массы.</div>
+            <div class="step">Добавьте эфирное масло.</div>
+            <div class="step">Сформируйте шарики.</div>
+            <div class="step">Обваляйте в сыром какао и при желании в сиропе.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container two-col two-col--top">
+        <div class="highlight-box">
+          <h2>Как принимать</h2>
+          <p>2–3 конфеты утром натощак.</p>
+          <p>21 день минимум.</p>
+          <p>Добавьте стакан гвоздичной воды:</p>
+          <p><strong>1 чайная ложка молотой гвоздики на стакан тёплой воды. Настоять 15 минут.</strong></p>
+        </div>
+        <div class="quote-box">
+          <p>Моя дочка съела только морковный сок два дня — и без единой таблетки вышли два тропических паразита.</p>
+          <p><strong>Еда работает сильнее, чем вы думаете.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <div class="copy">
+          <span class="eyebrow">Важно</span>
+          <h2>Почему этого недостаточно</h2>
+          <p>Конфеты и гвоздичная вода — это первый слой.</p>
+          <p>Хорошее начало.</p>
+          <p>Но у каждого человека свой набор паразитов.</p>
+          <p>И у каждого — своя реакция тела на очищение.</p>
+          <p>Я исследовала тысячи анкет своих учеников.</p>
+        </div>
+        <div class="image-card">
+          <img src="assets/support.webp" alt="Натуральные травы, чай и материалы для мягкого очищения">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container">
+        <div class="card">
+          <h2>У каждой хронической проблемы есть конкретный паразит за спиной</h2>
+          <ul class="dash-list">
+            <li>Гастрит и изжога — чаще всего хеликобактер.</li>
+            <li>Вздутие и СРК — лямблия.</li>
+            <li>Проблемы с желчным — описторхи.</li>
+            <li>Женские кисты и миомы — часто цисты ленточных червей.</li>
+            <li>Гормональный хаос и приливы — паразиты в печени, которая регулирует гормоны.</li>
+            <li>Тревога и нарушения сна — одноклеточные, которые влияют на нервную систему.</li>
+          </ul>
+          <p style="margin-top:26px;"><strong>Самостоятельная чистка без понимания, что именно выводите, — это как лечить температуру, не зная, от чего она.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="club">
+      <div class="container two-col">
+        <div class="copy">
+          <span class="eyebrow">Следующий шаг</span>
+          <h2>Клуб «Ведание»</h2>
+          <p>Раньше антипаразитарная программа у меня стоила 12 990 руб.</p>
+          <p>Это был индивидуальный формат:</p>
+          <ul class="dash-list">
+            <li>полная диагностика;</li>
+            <li>личное сопровождение;</li>
+            <li>протокол под конкретного человека.</li>
+          </ul>
+          <p style="margin-top:24px;">Сейчас я собрала всё самое важное в групповой формат внутри клуба «Ведание».</p>
+          <p><strong>Без потери качества — но доступно каждому.</strong></p>
+          <div class="btn-row">
+            <a class="btn" href="https://vedanie.urban-queen.com/">Войти в клуб «Ведание»</a>
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="assets/club.webp" alt="Травяной чай, натуральные ингредиенты и уютная атмосфера клуба Ведание">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container">
+        <div class="copy" style="max-width:840px;">
+          <span class="eyebrow">Что вас ждёт</span>
+          <h2>21 день с рецептами, протоколами и поддержкой</h2>
+        </div>
+        <div class="program-list">
+          <div class="program-item"><strong>Программа на 21 день</strong>Расписана по дням, с рецептами и протоколами.</div>
+          <div class="program-item"><strong>Разбор по типам паразитов</strong>Как понять, что именно у вас.</div>
+          <div class="program-item"><strong>Рецепты на каждый день</strong>Антипаразитарные блюда и напитки.</div>
+          <div class="program-item"><strong>Детокс-реакции</strong>Объяснение, что нормально, а что нет.</div>
+          <div class="program-item"><strong>Поддержка в чате</strong>Она не заканчивается через 21 день.</div>
+          <div class="program-item"><strong>Мы рядом</strong>Пока вы в клубе, мы рядом столько, сколько вам нужно.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container two-col two-col--top">
+        <div class="card">
+          <h2>А что дальше?</h2>
+          <p>Паразиты — это только начало.</p>
+          <p>Каждый месяц в клубе «Ведание» новая тема — новый уровень здоровья.</p>
+        </div>
+        <div class="card">
+          <h3>Август — микробиом и микрофлора кишечника</h3>
+          <p>Восстанавливаем то, что паразиты разрушили.</p>
+          <h3>Сентябрь — восстановление печени</h3>
+          <p>Главный орган детокса и гормонального баланса.</p>
+          <p>И дальше — каждый месяц новый протокол, новые материалы, новый слой чистоты.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container">
+        <div class="price-card">
+          <span class="eyebrow" style="background:rgba(255,255,255,.16);color:#fff;border-color:rgba(255,255,255,.28);">Участие в клубе</span>
+          <div class="price">2000 <span>руб./мес</span></div>
+          <h2>Вместо 12 990 руб. за индивидуальную программу</h2>
+          <p class="lead" style="color:rgba(255,255,255,.86);max-width:760px;margin-top:20px;">Это меньше упаковки аптечных таблеток. Которые к тому же выводят не всех.</p>
+          <div class="btn-row">
+            <a class="btn" href="https://vedanie.urban-queen.com/">Войти в клуб «Ведание»</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <div class="image-card">
+          <img src="assets/author.webp" alt="Наташа Сведовая за столом с травами">
+        </div>
+        <div class="copy">
+          <span class="eyebrow">Автор программы</span>
+          <h2>Наташа Сведовая</h2>
+          <p>Наташа Сведовая — натуропат, 13 лет на живом питании.</p>
+          <p>Автор системы «Ведание» — возвращение человека к своему живому состоянию.</p>
+          <p>Провела тысячи антипаразитарных программ.</p>
+          <p>Определяет наличие паразитов визуально — по лицу.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact">
+      <div class="container">
+        <div class="card" style="text-align:center;max-width:920px;margin:0 auto;">
+          <span class="eyebrow">Начните с первого шага</span>
+          <h2 style="margin-top:22px;">Пройдите тест и посмотрите честно, что уже показывает ваше тело</h2>
+          <p class="lead" style="margin-top:22px;">Если вы увидели 3, 5, 10 или больше признаков — не откладывайте. Ваше тело просит помощи прямо сейчас.</p>
+          <div class="btn-row" style="justify-content:center;">
+            <a class="btn" href="https://vedanie.urban-queen.com/">Начать очищение в клубе «Ведание»</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="brand" href="#top"><img src="assets/logo.png" alt="Логотип Ведание"><span>Ведание</span></a>
+      <p class="small">Тест от натуропата Наташи Сведовой · Клуб «Ведание»</p>
+      <p class="small">ИП Н. Д. Сведовая ОГРН 316502700063248 · <a href="mailto:N.Svedovaya@urban-queen.com">N.Svedovaya@urban-queen.com</a></p>
+      <p class="small">
+        <a href="https://urbanqueen.justclick.ru/pub_of">Публичная оферта</a> ·
+        <a href="https://urbanqueen.justclick.ru/pub_of">Согласие на получение рекламы</a> ·
+        <a href="https://urbanqueen.justclick.ru/politikacofiden">Политика обработки персональных данных</a> ·
+        <a href="https://urban-queen.com/soglasie-na-obrabotku-personalnyh-danny">Согласие на обработку персональных данных</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="mobile-cta">
+    <a class="btn" href="#test">Пройти тест</a>
+  </div>
+
+  <script>
+    const checks = Array.from(document.querySelectorAll('#checklist input[type="checkbox"]'));
+    const countEl = document.getElementById('count');
+    const titleEl = document.getElementById('result-title');
+    const textEl = document.getElementById('result-text');
+
+    function getResult(count){
+      if(count <= 2){
+        return ['0–2 галочки', 'Хорошая профилактика никогда не помешает. Тело работает в ресурсе — поддержите его.'];
+      }
+      if(count <= 5){
+        return ['3–5 галочек', 'Паразиты, скорее всего, есть. Тело уже сигнализирует. Самое время начать мягкую чистку.'];
+      }
+      if(count <= 10){
+        return ['6–10 галочек', 'Высокая вероятность, что паразиты активно влияют на ваше самочувствие, гормоны и настроение. Нужна системная программа.'];
+      }
+      return ['Больше 10 галочек', 'Паразиты управляют вами. Это не преувеличение — это то, что я вижу в тысячах анкет своих учеников. Ваше тело просит помощи прямо сейчас.'];
+    }
+
+    function updateResult(){
+      const count = checks.filter(item => item.checked).length;
+      const [title, text] = getResult(count);
+      countEl.textContent = count;
+      titleEl.textContent = title;
+      textEl.textContent = text;
+    }
+
+    checks.forEach(check => check.addEventListener('change', updateResult));
+  </script>
+</body>
+</html>

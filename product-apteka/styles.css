@@ -658,7 +658,7 @@ h3 {
 
 .cta-shell {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.8fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   gap: clamp(26px, 4vw, 54px);
   width: min(var(--max), 100%);
@@ -674,8 +674,25 @@ h3 {
 }
 
 .cta-shell .eyebrow,
-.cta-shell h2 {
+.cta-shell h2,
+.cta-shell h3 {
   color: #fffdf8;
+}
+
+.cta-shell > div {
+  display: grid;
+  gap: 24px;
+}
+
+.cta-shell .eyebrow {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.cta-shell h2 {
+  max-width: 24ch;
+  font-size: clamp(32px, 4vw, 50px);
+  line-height: 1.04;
 }
 
 .cta-shell .button {
@@ -934,6 +951,20 @@ h3 {
     border-radius: 26px;
   }
 
+  .cta-shell > div {
+    gap: 20px;
+  }
+
+  .cta-shell .eyebrow {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .cta-shell h2 {
+    font-size: clamp(27px, 8.5vw, 36px);
+    line-height: 1.06;
+  }
+
   .cta-shell .button,
   .program-card .button {
     justify-self: stretch;
@@ -979,5 +1010,13 @@ h3 {
 
   .check-list li {
     font-size: 15px;
+  }
+
+  .cta-shell .eyebrow {
+    font-size: 13px;
+  }
+
+  .cta-shell h2 {
+    font-size: 27px;
   }
 }

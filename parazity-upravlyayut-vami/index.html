@@ -233,6 +233,9 @@
       overflow:hidden;
     }
     .image-card img{border-radius:24px;width:100%;height:auto;object-fit:cover;}
+    .clove-water .image-card{justify-self:center;width:min(100%,560px);}
+    .clove-water .image-card img{display:block;width:100%;height:auto;object-fit:contain;}
+    .clove-water .copy{max-width:560px;}
     .highlight-box{
       padding:32px;
       border-radius:var(--radius);
@@ -336,6 +339,7 @@
 
     @media (max-width: 1040px){
       .hero__grid,.two-col,.recipe-grid{grid-template-columns:1fr;}
+      .clove-water .copy{order:-1;}
       .hero__card{max-width:580px;margin:0 auto;}
       .test-wrap{grid-template-columns:1fr;}
       .result-panel{position:relative;top:auto;}
@@ -600,6 +604,20 @@
         <div class="quote-box">
           <p>Моя дочка съела только морковный сок два дня — и без единой таблетки вышли два тропических паразита.</p>
           <p><strong>Еда работает сильнее, чем вы думаете.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--compact clove-water">
+      <div class="container two-col">
+        <div class="image-card">
+          <img src="assets/clove-water.jpg" alt="Инструкция по приготовлению и употреблению гвоздичной воды">
+        </div>
+        <div class="copy">
+          <span class="eyebrow">Дополнение к рецепту</span>
+          <h2>Гвоздичная вода</h2>
+          <p class="lead">Антипаразитарные конфеты можно усилить простым напитком — гвоздичной водой.</p>
+          <p>Гвоздика традиционно используется для поддержки пищеварения, кишечника, желчеоттока, свежести дыхания и естественных процессов очищения организма.</p>
         </div>
       </div>
     </section>

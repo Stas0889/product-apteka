@@ -1,1 +1,202 @@
-PLACEHOLDER
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07777B">
+  <meta name="description" content="Тест «Ваш гормональный возраст»">
+  <meta property="og:title" content="Тест «Ваш гормональный возраст»">
+  <meta property="og:type" content="website">
+  <title>Тест «Ваш гормональный возраст»</title>
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="В начало страницы">
+        <img src="assets/logo.png" alt="Ведание" width="54" height="54">
+        <span>
+          <b>ВЕДАНИЕ</b>
+          <small>система возвращения в живое состояние</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Навигация">
+        <a href="#instruction">Инструкция</a>
+        <a href="#test">Тест</a>
+        <a href="#results-info">Результаты</a>
+      </nav>
+      <a class="header-cta" href="#test">Начать тест</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> 28 вопросов</div>
+          <h1>Тест «Ваш гормональный возраст»</h1>
+          <p class="hero-lead">Ответьте «да» или «нет» на каждый вопрос. За каждый ответ «да» — 1 балл.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#test">Пройти тест</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+          <div class="hero-photo">
+            <img src="assets/hero-photo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="instruction-section" id="instruction">
+      <div class="container narrow">
+        <div class="section-kicker"><span></span> Инструкция</div>
+        <div class="text-panel">
+          <p>Ответьте «да» или «нет» на каждый вопрос. За каждый ответ «да» — 1 балл. Посчитайте сумму баллов и найдите свою категорию в разделе «Результаты».</p>
+          <p>Этот тест не является медицинской диагностикой в строгом смысле — но достаточно точно указывает на вероятные гормональные изменения в организме. Это повод внимательнее присмотреться к себе и, если что-то беспокоит, обсудить с врачом. Ниже вы получите не диагноз, а понятную карту того, что сейчас происходит с телом, и конкретные шаги для поддержки.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-section" id="test">
+      <div class="container quiz-layout">
+        <aside class="quiz-intro">
+          <div class="section-kicker light"><span></span> Вопросы</div>
+          <h2>Вопросы <span>(28 шт.)</span></h2>
+        </aside>
+
+        <div class="quiz-card" id="quizApp">
+          <div class="quiz__top">
+            <div>
+              <span class="quiz__eyebrow" id="stepType">0. Немного о вас</span>
+              <strong class="quiz__category" id="stepCategory">Сколько вам сейчас лет?</strong>
+            </div>
+            <div class="quiz__counter" id="questionCounter">0 / 28</div>
+          </div>
+
+          <div class="quiz__progress" aria-hidden="true"><span id="progressBar"></span></div>
+          <div class="quiz__stage" id="quizStage" aria-live="polite"></div>
+
+          <div class="quiz__footer">
+            <button class="quiz__back" id="backButton" type="button" disabled>Назад</button>
+            <span class="quiz__answered"><b id="answeredCount">0</b> из 28</span>
+            <button class="button button-primary quiz__next" id="nextButton" type="button" disabled>Далее</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="result-section" id="result" hidden>
+      <div class="container result-shell">
+        <div class="result-head">
+          <div class="result-score">
+            <span>Ваш результат</span>
+            <strong id="resultScore">0</strong>
+            <small id="scoreWord">баллов</small>
+          </div>
+          <h2 id="resultTitle"></h2>
+        </div>
+
+        <article class="result-copy" id="resultBody"></article>
+        <div class="result-steps-block">
+          <h3>Что можно сделать уже сегодня:</h3>
+          <div id="resultSteps"></div>
+        </div>
+        <div class="result-video-frame" id="resultVideoFrame" hidden></div>
+        <a class="button button-primary result-club-button" href="https://vedanie.urban-queen.com/gormonalnyy-vozrast/" target="_blank" rel="noopener noreferrer">Зарегистрироваться в клуб</a>
+        <button class="restart" id="restartTest" type="button">Пройти тест ещё раз</button>
+      </div>
+    </section>
+
+    <section class="results-info-section" id="results-info">
+      <div class="container">
+        <div class="section-kicker"><span></span> РЕЗУЛЬТАТЫ</div>
+        <p class="results-note">После прохождения теста будет расшифровка результата.</p>
+        <div class="results-grid">
+          <article class="small-result-card"><span>0–7 баллов</span><h3>«Тихая гостья»</h3></article>
+          <article class="small-result-card"><span>8–14 баллов</span><h3>«Начало разговора»</h3></article>
+          <article class="small-result-card"><span>15–21 баллов</span><h3>«Время трансформации»</h3></article>
+          <article class="small-result-card"><span>22–28 баллов</span><h3>«Новая глава»</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-kicker"><span></span> Что говорят участницы клуба «ВЕДАНИЕ: гормональный возраст»</div>
+        <div class="reviews-slider" id="reviewsSlider">
+          <button class="reviews-nav reviews-nav--prev" type="button" aria-label="Предыдущие отзывы">
+            <span>‹</span>
+          </button>
+          <div class="reviews-viewport">
+            <div class="reviews-track">
+              <article class="review-card">
+                <div class="review-name">Александра</div>
+                <p>Сказать, что я впечатлена, — это ничего не сказать. По ощущениям это будто заново родиться и начать жить новую жизнь.<br><br>После лекций меня накрыли такие осознания, что будто перевернулось всё восприятие. Я даже не ожидала, что во мне будет такой отклик и что я смогу увидеть весь этот масштаб и красоту.<br><br>Тело уже ощущается по-новому. Я бы сказала, что впервые по-настоящему ощущается. Благодарю Наташу Сведовую и всю команду за возможность открыть новый мир, новую жизнь в себе и вокруг.</p>
+              </article>
+              <article class="review-card">
+                <div class="review-name">Альбина Гайнетдинова</div>
+                <p>Благодарю за простые и доступные техники, которые оказались очень глубокими и эффективными. Мне очень понравилась Наташина простота.<br><br>Я стала спокойнее, легче, расслабленнее, мягче. Ушла суета и лишние навязчивые мысли. Я стала больше присутствовать в моменте, больше быть в теле, слушать и слышать себя.</p>
+              </article>
+              <article class="review-card">
+                <div class="review-name">Наталья Богданова</div>
+                <p>В процессе я поняла, что хочу глубже раскрывать свою женственность. Многие знания стали для меня настоящими открытиями, но при этом всё шло через принятие, без внутреннего сопротивления.<br><br>Я почувствовала настоящее женское единение и поддержку. Хочется дальше изучать и применять практики, потому что чувствую: это моё.</p>
+              </article>
+              <article class="review-card">
+                <div class="review-name">Ксения</div>
+                <p>После телесных практик меня буквально захватили ощущения. Я стала больше слушать себя, трогать, чувствовать разные части тела. Неожиданно и непривычно.<br><br>И отношения в семье вдруг поменялись. Я стала меньше спорить, меньше критиковать, больше быть в себе — и удивительно, мир от этого не рухнул. Наоборот, стало больше тепла, нежности и любви.</p>
+              </article>
+              <article class="review-card">
+                <div class="review-name">Екатерина Мызникова</div>
+                <p>Я ещё не до конца прошла все уроки, но уже ежедневно практикую. Позвоночник будто стал выпрямляться, меньше болит поясница, живот стал ровнее, мышцы стали плотнее.<br><br>Из внутреннего состояния: стала спокойнее, уравновешеннее, концентрированнее и чаще «в себе». Обязательно буду продолжать и добавлять следующие практики.</p>
+              </article>
+              <article class="review-card">
+                <div class="review-name">Алла</div>
+                <p>Я иду в своём темпе, но уже чувствую, как практики работают. Даже несколько минут дыхания женщины помогают мне выдохнуть, переключиться и вернуться к себе.<br><br>Очень много откликается. С некоторыми практиками я была знакома, но здесь увидела их по-новому — через опыт, женственность и очень близкую мне подачу Наташи.</p>
+              </article>
+              <article class="review-card">
+                <div class="review-name">Наталья</div>
+                <p>Очень насыщенно, глубоко, интересно и практично. Столько важного материала, к которому хочется возвращаться не один раз.<br><br>Мне очень нравится Наташина дотошность в подаче информации, практик и то состояние, из которого она всё даёт. Многие практики я уже внедрила, и каждый раз нахожу для себя что-то новое.</p>
+              </article>
+              <article class="review-card">
+                <div class="review-name">Ольга</div>
+                <p>Благодарю за это пространство — откликнулось очень многое. Я с огромным удовольствием впитывала информацию, потому что была к ней готова.<br><br>За это время удалось интегрировать практики в свою жизнь, чему я очень рада. Особенно ценно, что можно не бежать вперёд, а осваивать всё постепенно, в своём темпе.</p>
+              </article>
+              <article class="review-card">
+                <div class="review-name">Ирина</div>
+                <p>Я ещё не до конца прошла все уроки, но уже чувствую изменения. Стала спокойнее, уравновешеннее, концентрированнее и чаще «в себе».<br><br>Каждый урок для меня очень ценен. Есть ощущение, что получаю не просто информацию, а знания, которые хочется применять и постепенно встраивать в жизнь.</p>
+              </article>
+              <article class="review-card">
+                <div class="review-name">Нина Федосенко</div>
+                <p>Наталья и вся команда, благодарю за такую наполненность, энергию и любовь.<br><br>С каждым новым материалом я узнаю для себя много полезного. Постепенно осваиваю практики в своём темпе и радуюсь такой возможности. Я стала осознаннее относиться к себе, своему состоянию и своим желаниям.</p>
+              </article>
+            </div>
+          </div>
+          <button class="reviews-nav reviews-nav--next" type="button" aria-label="Следующие отзывы">
+            <span>›</span>
+          </button>
+        </div>
+        <div class="reviews-dots" id="reviewsDots" aria-label="Навигация по отзывам"></div>
+      </div>
+    </section>
+
+    <section class="webinar-section" id="webinar">
+      <div class="container webinar-card webinar-card-single">
+        <div>
+          <p>Каким бы ни был ваш результат — ваше тело постоянно говорит с вами, и это прекрасная возможность узнать себя глубже.</p>
+          <p>Я подробно раскрою эту тему и покажу, как устроена системная поддержка на открытом вебинаре — приходите, будет полезно независимо от вашего результата.</p>
+          <p class="webinar-date"><strong>Дата вебинара:</strong> 2 августа в 11:00 МСК</p>
+          <p class="webinar-note"><strong>Вы зарегистрированы на вебинар.</strong> Ссылку я вам пришлю за час до его начала.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

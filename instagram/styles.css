@@ -1,0 +1,424 @@
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("./fonts/manrope-cyrillic-400-normal.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("./fonts/manrope-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("./fonts/manrope-cyrillic-700-normal.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("./fonts/manrope-latin-700-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url("./fonts/manrope-cyrillic-800-normal.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url("./fonts/manrope-latin-800-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("./fonts/montserrat-cyrillic-600-normal.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("./fonts/montserrat-latin-600-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("./fonts/montserrat-cyrillic-700-normal.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("./fonts/montserrat-latin-700-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url("./fonts/montserrat-cyrillic-800-normal.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url("./fonts/montserrat-latin-800-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --ink: #1e3329;
+  --muted: #5f7068;
+  --paper: #f4f9f7;
+  --white: #ffffff;
+  --sky: #06a2b8;
+  --teal: #07777b;
+  --forest: #05531d;
+  --green: #18883b;
+  --cyan: #01e4ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-shell {
+  min-height: 100svh;
+  overflow: hidden;
+  position: relative;
+  padding: 24px 14px 44px;
+  background:
+    radial-gradient(circle at 5% 8%, rgb(6 162 184 / 12%), transparent 29%),
+    radial-gradient(circle at 95% 74%, rgb(24 136 59 / 10%), transparent 31%),
+    var(--paper);
+}
+
+.ambient {
+  position: absolute;
+  pointer-events: none;
+  border: 1px solid rgb(7 119 123 / 13%);
+  border-radius: 50%;
+}
+
+.ambient::before,
+.ambient::after {
+  content: "";
+  position: absolute;
+  border: inherit;
+  border-radius: inherit;
+}
+
+.ambient-one {
+  width: 280px;
+  height: 280px;
+  top: -160px;
+  right: -120px;
+}
+
+.ambient-one::before { inset: 24px; }
+.ambient-one::after { inset: 52px; }
+
+.ambient-two {
+  width: 220px;
+  height: 220px;
+  bottom: -125px;
+  left: -110px;
+  border-color: rgb(24 136 59 / 14%);
+}
+
+.ambient-two::before { inset: 20px; }
+.ambient-two::after { inset: 44px; }
+
+.link-hub {
+  width: min(100%, 590px);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero {
+  text-align: center;
+  padding: 5px 12px 26px;
+}
+
+.brand {
+  width: fit-content;
+  margin: 0 auto 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  width: 58px;
+  height: 58px;
+  display: block;
+  object-fit: contain;
+}
+
+.brand-name {
+  color: var(--forest);
+  font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.hero-kicker {
+  margin: 0 0 10px;
+  color: var(--teal);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: clamp(34px, 10vw, 51px);
+  line-height: 1.03;
+  letter-spacing: -0.055em;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.hero-copy {
+  max-width: 420px;
+  margin: 15px auto 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+  text-wrap: balance;
+}
+
+.button-list {
+  display: grid;
+  gap: 10px;
+}
+
+.link-button {
+  --accent: var(--teal);
+  --surface: #dff4f7;
+  --surface-strong: #c7ebf0;
+  min-height: 86px;
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) 30px;
+  align-items: center;
+  gap: 11px;
+  padding: 14px 16px;
+  border: 0;
+  border-radius: 23px;
+  background: linear-gradient(135deg, var(--surface), var(--surface-strong));
+  box-shadow: 0 12px 35px rgb(37 57 55 / 5.5%);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.link-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 42px rgb(37 57 55 / 11%);
+}
+
+.link-button:active {
+  transform: scale(0.985);
+}
+
+.link-button:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent, var(--teal)) 32%, transparent);
+  outline-offset: 3px;
+}
+
+.link-button.foundation {
+  --accent: var(--forest);
+  --surface: #e1f3e6;
+  --surface-strong: #ccebd5;
+}
+
+.link-button.telegram {
+  --accent: var(--teal);
+  --surface: #d6faff;
+  --surface-strong: #aef5fd;
+}
+
+.link-button.kailash {
+  --accent: var(--white);
+  --surface: var(--teal);
+  --surface-strong: var(--forest);
+}
+
+.item-number {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.item-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.item-eyebrow {
+  color: var(--accent);
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.item-title {
+  color: var(--ink);
+  font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+  font-size: clamp(15px, 4vw, 18px);
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.link-button.kailash .item-number {
+  background: var(--cyan);
+  color: var(--forest);
+}
+
+.link-button.kailash .item-eyebrow,
+.link-button.kailash .item-title,
+.link-button.kailash .item-arrow {
+  color: var(--white);
+}
+
+.link-button.kailash .item-arrow {
+  background: rgb(255 255 255 / 14%);
+}
+
+.link-button.featured .item-title {
+  font-weight: 800;
+}
+
+.item-arrow {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  justify-self: end;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 11%, transparent);
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+footer {
+  padding: 34px 12px 0;
+  text-align: center;
+  color: var(--muted);
+}
+
+footer p {
+  margin: 0 0 6px;
+  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+  font-style: italic;
+}
+
+footer span {
+  color: var(--teal);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 640px) {
+  .page-shell { padding: 48px 24px 64px; }
+  .hero { padding-bottom: 32px; }
+  .brand { margin-bottom: 34px; }
+  .button-list { gap: 12px; }
+
+  .link-button {
+    min-height: 96px;
+    grid-template-columns: 48px minmax(0, 1fr) 34px;
+    padding: 17px 19px;
+    border-radius: 26px;
+  }
+
+  .item-number {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

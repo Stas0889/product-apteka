@@ -47,8 +47,9 @@ a { color: inherit; text-decoration: none; }
 .direction-heading p { margin: 9px 0 0; color: #596159; font-size: 12px; line-height: 1.45; }
 .direction-grid { display: grid; gap: 8px; }
 .hormone-grid { grid-template-columns: minmax(0, .96fr) minmax(0, 1.18fr); }
-.gut-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); }
-.guide-stack { display: grid; gap: 8px; }
+.gut-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.gut-grid .guide-stack { display: contents; }
+.gut-grid > .program { grid-column: 1 / -1; }
 
 .offer { min-width: 0; min-height: 255px; display: flex; flex-direction: column; padding: 18px 15px 14px; border: 1px solid rgb(29 43 35 / 9%); border-radius: 15px; transition: transform 180ms ease, box-shadow 180ms ease; }
 .offer:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgb(25 35 29 / 13%); }
@@ -65,8 +66,8 @@ a { color: inherit; text-decoration: none; }
 .offer-action { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; margin-top: auto; padding-top: 16px; color: inherit; font-size: 9px; line-height: 1.2; font-weight: 800; letter-spacing: .025em; }
 .offer-action b, .wide-action b { flex: 0 0 28px; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid rgb(217 119 43 / 60%); border-radius: 50%; color: inherit; background: linear-gradient(145deg, rgb(217 119 43 / 21%), rgb(217 119 43 / 5%)); font-size: 14px; transition: transform 180ms ease, background 180ms ease; }
 .offer:hover .offer-action b, .wide-link:hover .wide-action b { transform: translateX(2px); background: rgb(217 119 43 / 26%); }
-.guide-stack .offer { min-height: 207px; }
-.guide-stack .food-guide { min-height: 170px; }
+.gut-grid .guide { min-height: 255px; }
+.gut-grid > .program { min-height: 230px; }
 
 .wide-link { position: relative; min-height: 195px; display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px; padding: 24px 22px; border-radius: 22px; overflow: hidden; transition: transform 180ms ease, box-shadow 180ms ease; }
 .wide-link:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgb(10 17 13 / 18%); }
@@ -95,14 +96,13 @@ a { color: inherit; text-decoration: none; }
   .direction-number { font-size: 34px; }
   .direction-heading p { font-size: 14px; }
   .direction-grid { gap: 12px; }
-  .guide-stack { gap: 12px; }
   .offer { min-height: 320px; padding: 24px 21px 19px; }
   .offer-type { font-size: 10px; }
   .offer-text { font-size: 13px; }
   .offer-date { font-size: 12px; }
   .offer-action { font-size: 11px; }
-  .guide-stack .offer { min-height: 248px; }
-  .guide-stack .food-guide { min-height: 207px; }
+  .gut-grid .guide { min-height: 285px; }
+  .gut-grid > .program { min-height: 255px; }
   .wide-link { grid-template-columns: 64px minmax(0, 1fr); gap: 14px; min-height: 230px; padding: 32px; }
   .wide-number { font-size: 33px; }
   .wide-type { font-size: 10px; }

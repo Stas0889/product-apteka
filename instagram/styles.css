@@ -405,3 +405,21 @@ footer p { margin: 0; font-size: 10px; line-height: 1.35; }
     letter-spacing: -.01em;
   }
 }
+
+
+/* Catalog card grid alignment — v9 */
+.catalog-card {
+  margin-left: 55px;
+}
+
+@media (min-width: 560px) {
+  .catalog-card {
+    margin-left: 76px;
+  }
+}
+
+@media (max-width: 390px) {
+  .catalog-card {
+    margin-left: 45px;
+  }
+}

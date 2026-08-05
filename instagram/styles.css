@@ -379,3 +379,29 @@ footer p { margin: 0; font-size: 10px; line-height: 1.35; }
   .program-card-new strong { font-size: 19px; }
   .catalog-card .item-date { font-size: 13px; letter-spacing: .035em; }
 }
+
+
+/* Mobile hero spacing and badge contrast — v8 */
+.item-kind {
+  color: #fff;
+  text-shadow: 0 1px 1px rgb(0 0 0 / 18%);
+}
+
+@media (max-width: 559px) {
+  .catalog-hero {
+    min-height: 0;
+    display: block;
+    padding: 20px 18px 34px;
+  }
+
+  .catalog-intro {
+    margin-top: 64px;
+  }
+
+  .catalog-intro h1 {
+    margin-top: 9px;
+    font-size: clamp(34px, 10.5vw, 40px);
+    line-height: .94;
+    letter-spacing: -.01em;
+  }
+}

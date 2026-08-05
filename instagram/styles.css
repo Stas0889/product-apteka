@@ -64,10 +64,11 @@ a { color: inherit; text-decoration: none; }
 .guide { background: linear-gradient(145deg, #fff 0%, #fbf8f1 58%, #f3eadc 100%); color: var(--ink); }
 .program { min-height: 255px; border-color: rgb(231 160 95 / 28%); background: var(--green); color: var(--white); }
 .offer-type { width: fit-content; margin-bottom: 14px; color: var(--accent); font-size: 8px; line-height: 1.2; font-weight: 800; letter-spacing: .075em; }
+.guide .offer-type { padding: 5px 7px; border-radius: 4px; background: var(--accent); color: #fff; letter-spacing: .055em; }
 .program .offer-type { color: #f0ad70; }
 .offer strong { color: inherit; font: 700 clamp(15px, 4.2vw, 25px)/1.08 "Montserrat", sans-serif; letter-spacing: -.022em; overflow-wrap: anywhere; }
-.program strong { font-size: clamp(16px, 4.6vw, 27px); }
-.offer-text { margin-top: 11px; color: #566057; font-size: 11px; line-height: 1.42; }
+.program strong { font-size: clamp(15px, 4.2vw, 25px); }
+.offer-text { margin-top: 11px; color: #566057; font-size: 12px; line-height: 1.42; }
 .program .offer-text { color: rgb(255 253 248 / 73%); }
 .offer-date { width: fit-content; max-width: 100%; margin-top: 15px; padding: 10px 11px; border-radius: 5px; background: var(--accent); color: #fff; font-size: 11px; line-height: 1.2; font-weight: 800; letter-spacing: .015em; }
 .offer-action { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; margin-top: auto; padding-top: 16px; color: inherit; font-size: 9px; line-height: 1.2; font-weight: 800; letter-spacing: .025em; }
@@ -106,7 +107,7 @@ a { color: inherit; text-decoration: none; }
   .direction-grid { gap: 12px; }
   .offer { min-height: 320px; padding: 24px 21px 19px; }
   .offer-type { font-size: 10px; }
-  .offer-text { font-size: 13px; }
+  .offer-text { font-size: 14px; }
   .offer-date { padding: 12px 13px; font-size: 13px; }
   .offer-action { font-size: 11px; }
   .gut-grid .guide { min-height: 285px; }
@@ -129,8 +130,8 @@ a { color: inherit; text-decoration: none; }
   .direction-heading p { font-size: 11px; }
   .offer { padding-left: 12px; padding-right: 12px; }
   .offer strong { font-size: 14px; }
-  .program strong { font-size: 15px; }
-  .offer-text { font-size: 10px; }
+  .program strong { font-size: 14px; }
+  .offer-text { font-size: 11px; }
   .offer-date { padding: 9px 8px; font-size: 10px; }
   .offer-action { font-size: 8px; }
   .offer-action b { flex-basis: 26px; width: 26px; height: 26px; }

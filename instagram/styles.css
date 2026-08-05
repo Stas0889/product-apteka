@@ -41,8 +41,8 @@ a { color: inherit; text-decoration: none; }
 
 .catalog { display: grid; gap: 12px; }
 .direction { padding: 24px 8px 8px; border-radius: 22px; background: var(--panel); color: var(--ink); box-shadow: 0 16px 42px rgb(10 17 13 / 18%); }
-.direction-heading { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px; align-items: start; padding: 0 14px 20px; }
-.direction-number { color: var(--accent); font: 600 26px/1 "Montserrat", sans-serif; }
+.direction-heading { display: block; padding: 0 10px 20px; }
+.direction-number { display: block; margin-bottom: 10px; color: var(--accent); font: 600 26px/1 "Montserrat", sans-serif; }
 .direction-heading h2 { margin: 0; color: #121a16; font: 700 clamp(23px, 6.7vw, 36px)/1.03 "Montserrat", sans-serif; letter-spacing: -.025em; }
 .direction-heading p { margin: 9px 0 0; color: #596159; font-size: 12px; line-height: 1.45; }
 .direction-grid { display: grid; gap: 8px; }
@@ -51,10 +51,16 @@ a { color: inherit; text-decoration: none; }
 .gut-grid .guide-stack { display: contents; }
 .gut-grid > .program { grid-column: 1 / -1; }
 
-.offer { min-width: 0; min-height: 255px; display: flex; flex-direction: column; padding: 18px 15px 14px; border: 1px solid rgb(29 43 35 / 9%); border-radius: 15px; transition: transform 180ms ease, box-shadow 180ms ease; }
+.offer { position: relative; isolation: isolate; min-width: 0; min-height: 255px; display: flex; flex-direction: column; padding: 18px 15px 14px; border: 1px solid rgb(29 43 35 / 9%); border-radius: 15px; overflow: hidden; transition: transform 180ms ease, box-shadow 180ms ease; }
+.offer::after, .wide-link::after { content: ""; position: absolute; z-index: -1; top: 0; right: 0; width: 47%; height: 100%; background: var(--visual) center / cover no-repeat; opacity: .2; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 42%, #000 100%); mask-image: linear-gradient(90deg, transparent 0%, #000 42%, #000 100%); pointer-events: none; }
+.offer.guide::after, .community::after { display: none; }
+.offer.program::after, .kailash::after { opacity: .28; }
+.visual-hormones { --visual: url("./first-version-card-images/02-hormones.webp"); }
+.visual-gut { --visual: url("./first-version-card-images/03-gut-microbiome.webp"); }
+.visual-kailash { --visual: url("./first-version-card-images/05-kailash.webp"); }
 .offer:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgb(25 35 29 / 13%); }
 .offer:focus-visible, .wide-link:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-.guide { background: var(--panel-soft); color: var(--ink); }
+.guide { background: linear-gradient(145deg, #fff 0%, #fbf8f1 58%, #f3eadc 100%); color: var(--ink); }
 .program { min-height: 255px; border-color: rgb(231 160 95 / 28%); background: var(--green); color: var(--white); }
 .offer-type { width: fit-content; margin-bottom: 14px; color: var(--accent); font-size: 8px; line-height: 1.2; font-weight: 800; letter-spacing: .075em; }
 .program .offer-type { color: #f0ad70; }
@@ -62,22 +68,22 @@ a { color: inherit; text-decoration: none; }
 .program strong { font-size: clamp(16px, 4.6vw, 27px); }
 .offer-text { margin-top: 11px; color: #566057; font-size: 11px; line-height: 1.42; }
 .program .offer-text { color: rgb(255 253 248 / 73%); }
-.offer-date { width: fit-content; margin-top: 14px; padding: 8px 9px; border-radius: 5px; background: var(--accent); color: #fff; font-size: 10px; line-height: 1.2; font-weight: 800; letter-spacing: .015em; }
+.offer-date { width: fit-content; max-width: 100%; margin-top: 15px; padding: 10px 11px; border-radius: 5px; background: var(--accent); color: #fff; font-size: 11px; line-height: 1.2; font-weight: 800; letter-spacing: .015em; }
 .offer-action { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; margin-top: auto; padding-top: 16px; color: inherit; font-size: 9px; line-height: 1.2; font-weight: 800; letter-spacing: .025em; }
 .offer-action b, .wide-action b { flex: 0 0 28px; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid rgb(217 119 43 / 60%); border-radius: 50%; color: inherit; background: linear-gradient(145deg, rgb(217 119 43 / 21%), rgb(217 119 43 / 5%)); font-size: 14px; transition: transform 180ms ease, background 180ms ease; }
 .offer:hover .offer-action b, .wide-link:hover .wide-action b { transform: translateX(2px); background: rgb(217 119 43 / 26%); }
 .gut-grid .guide { min-height: 255px; }
 .gut-grid > .program { min-height: 230px; }
 
-.wide-link { position: relative; min-height: 195px; display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px; padding: 24px 22px; border-radius: 22px; overflow: hidden; transition: transform 180ms ease, box-shadow 180ms ease; }
+.wide-link { position: relative; isolation: isolate; min-height: 195px; display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px; padding: 24px 22px; border-radius: 22px; overflow: hidden; transition: transform 180ms ease, box-shadow 180ms ease; }
 .wide-link:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgb(10 17 13 / 18%); }
-.community { border: 1px solid rgb(217 119 43 / 46%); background: var(--green-deep); color: var(--white); }
-.kailash { background: var(--panel); color: var(--ink); }
+.community { border: 0; background: linear-gradient(145deg, #fff 0%, #fbf8f1 62%, #f2e7d8 100%); color: var(--ink); }
+.kailash { border: 1px solid rgb(217 119 43 / 46%); background: var(--green-deep); color: var(--white); }
 .wide-number { color: var(--accent-soft); font: 600 25px/1 "Montserrat", sans-serif; }
 .wide-type { display: block; margin-bottom: 8px; color: var(--accent-soft); font-size: 8px; line-height: 1.2; font-weight: 800; letter-spacing: .09em; }
 .wide-link strong { display: block; font: 700 clamp(25px, 7vw, 37px)/1.02 "Montserrat", sans-serif; letter-spacing: -.025em; }
 .wide-text { display: block; margin-top: 9px; color: rgb(255 253 248 / 69%); font-size: 12px; line-height: 1.4; }
-.kailash .wide-text { color: #5a625b; }
+.community .wide-text { color: #5a625b; }
 .wide-date { display: block; width: fit-content; margin-top: 11px; padding: 7px 9px; border-radius: 5px; background: var(--accent); color: #fff; font-size: 10px; font-weight: 800; }
 .wide-action { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: min(100%, 300px); margin-top: 18px; color: inherit; font-size: 10px; font-weight: 800; letter-spacing: .035em; }
 
@@ -92,14 +98,14 @@ a { color: inherit; text-decoration: none; }
   .hero { padding: 32px 20px 46px; }
   .hero-copy { margin-top: 46px; }
   .direction { padding: 34px 12px 12px; }
-  .direction-heading { grid-template-columns: 64px minmax(0, 1fr); gap: 14px; padding: 0 20px 27px; }
+  .direction-heading { padding: 0 16px 27px; }
   .direction-number { font-size: 34px; }
   .direction-heading p { font-size: 14px; }
   .direction-grid { gap: 12px; }
   .offer { min-height: 320px; padding: 24px 21px 19px; }
   .offer-type { font-size: 10px; }
   .offer-text { font-size: 13px; }
-  .offer-date { font-size: 12px; }
+  .offer-date { padding: 12px 13px; font-size: 13px; }
   .offer-action { font-size: 11px; }
   .gut-grid .guide { min-height: 285px; }
   .gut-grid > .program { min-height: 255px; }
@@ -115,14 +121,15 @@ a { color: inherit; text-decoration: none; }
   .page-shell { padding: 0 8px; }
   .hero { padding-left: 12px; padding-right: 12px; }
   .hero h1 { font-size: 38px; }
-  .direction-heading { grid-template-columns: 42px minmax(0, 1fr); gap: 6px; padding-left: 10px; padding-right: 10px; }
+  .direction-heading { padding-left: 7px; padding-right: 7px; }
+  .direction-number { margin-bottom: 8px; }
   .direction-heading h2 { font-size: 21px; }
   .direction-heading p { font-size: 11px; }
   .offer { padding-left: 12px; padding-right: 12px; }
   .offer strong { font-size: 14px; }
   .program strong { font-size: 15px; }
   .offer-text { font-size: 10px; }
-  .offer-date { font-size: 9px; }
+  .offer-date { padding: 9px 8px; font-size: 10px; }
   .offer-action { font-size: 8px; }
   .offer-action b { flex-basis: 26px; width: 26px; height: 26px; }
   .wide-link { padding-left: 18px; padding-right: 18px; }

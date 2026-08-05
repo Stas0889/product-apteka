@@ -482,3 +482,23 @@ body,
 .system-footer {
   background: #2a2a2a;
 }
+
+
+/* Muted charcoal card background — v12 */
+.catalog-card,
+.program-card-new {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent) 7%, #1b1b1b),
+    #1b1b1b 68%
+  );
+}
+
+.catalog-card:hover,
+.program-card-new:hover {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent) 11%, #1b1b1b),
+    #1b1b1b 72%
+  );
+}

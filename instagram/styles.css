@@ -321,7 +321,7 @@ footer p { margin: 0; font-size: 10px; line-height: 1.35; }
 /* Structured seven-item catalog */
 .structured-page .link-hub { background: #08100c; }
 .catalog-hero { position: relative; min-height: 570px; padding: 24px 22px 44px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; border-bottom: 1px solid var(--line); background: radial-gradient(circle at 78% 22%, rgb(154 128 82 / 28%), transparent 27%), radial-gradient(ellipse at 80% 42%, rgb(72 99 70 / 24%), transparent 36%), linear-gradient(160deg, #111b14, #07100b 62%, #08100c); }
-.catalog-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgb(3 8 5 / 12%), rgb(3 8 5 / 55%) 60%, #08100c); pointer-events: none; }
+.catalog-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgb(6 14 9 / 26%), rgb(6 14 9 / 68%) 60%, #08100c); pointer-events: none; }
 .catalog-brand, .catalog-intro { position: relative; z-index: 1; }
 .catalog-brand { display: flex; align-items: center; gap: 12px; }
 .catalog-brand img { width: 54px; height: 54px; object-fit: contain; filter: brightness(0) invert(1); }
@@ -329,29 +329,29 @@ footer p { margin: 0; font-size: 10px; line-height: 1.35; }
 .catalog-brand span { display: block; margin-top: 5px; color: rgb(241 236 223 / 68%); font-size: 7px; line-height: 1.35; letter-spacing: .11em; }
 .catalog-intro .eyebrow { color: #c9ae79; font: 700 13px/1 "Montserrat", sans-serif; letter-spacing: .2em; }
 .catalog-intro h1 { margin: 10px 0 16px; font: 600 clamp(43px, 13vw, 74px)/.92 "Montserrat", sans-serif; letter-spacing: .01em; }
-.catalog-intro p { max-width: 430px; margin: 0; color: #c8c4bb; font-size: 13px; line-height: 1.55; }
+.catalog-intro p { max-width: 430px; margin: 0; color: #d1cec5; font-size: 14px; line-height: 1.58; }
 .catalog-list { background: #08100c; }
-.catalog-group { --accent: #ad9160; position: relative; padding: 34px 18px 38px; border-bottom: 1px solid rgb(183 157 104 / 23%); background: radial-gradient(circle at 100% 0, color-mix(in srgb, var(--accent) 14%, transparent), transparent 42%); }
+.catalog-group { --accent: #ad9160; position: relative; padding: 34px 18px 38px; border-bottom: 1px solid rgb(183 157 104 / 23%); background: radial-gradient(circle at 100% 0, color-mix(in srgb, var(--accent) 8%, transparent), transparent 46%); }
 .group-gut { --accent: #5d8b68; }
 .group-community { --accent: #06a2b8; }
 .group-kailash { --accent: #ad875c; }
 .group-header { display: grid; grid-template-columns: 58px minmax(0,1fr); gap: 15px; margin-bottom: 22px; }
 .group-number { color: var(--accent); border-right: 1px solid color-mix(in srgb, var(--accent) 60%, transparent); font: 500 30px/1 "Montserrat", sans-serif; }
 .group-header h2 { margin: 0; font: 600 clamp(24px, 7vw, 38px)/1.04 "Montserrat", sans-serif; letter-spacing: .015em; }
-.group-header p { margin: 9px 0 0; color: #aaa89f; font-size: 11px; line-height: 1.45; }
+.group-header p { margin: 10px 0 0; max-width: 440px; color: #c0bdb4; font-size: 13px; line-height: 1.5; }
 .catalog-card { position: relative; display: flex; flex-direction: column; min-height: 194px; margin: 12px 0 0 73px; padding: 19px 18px 16px; border-left: 4px solid var(--accent); background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 21%, #101510), #0d120f 62%); box-shadow: 0 10px 30px rgb(0 0 0 / 22%); transition: transform .18s ease, background .18s ease; }
 .catalog-card:hover { transform: translateY(-2px); background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 29%, #101510), #121813 70%); }
 .catalog-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .catalog-card .item-number { position: absolute; top: 16px; right: 17px; color: color-mix(in srgb, var(--accent) 78%, white); font: 700 11px/1 "Montserrat", sans-serif; }
-.item-kind { width: fit-content; margin-bottom: 13px; padding: 6px 8px; color: #06100b; background: var(--accent); font: 800 9px/1 "Manrope", sans-serif; letter-spacing: .12em; }
-.catalog-card strong { max-width: 430px; color: #f3eee3; font: 800 clamp(17px, 5.3vw, 27px)/1.08 "Montserrat", sans-serif; letter-spacing: .01em; }
-.catalog-card .item-description { margin-top: 10px; color: #bbb7ad; font-size: 11px; line-height: 1.45; }
-.catalog-card .item-date { width: fit-content; margin-top: 14px; padding: 9px 11px; color: #f5e7c9; border: 1px solid color-mix(in srgb, var(--accent) 78%, transparent); background: color-mix(in srgb, var(--accent) 21%, transparent); font: 800 12px/1 "Manrope", sans-serif; letter-spacing: .09em; }
-.catalog-card .item-action { display: flex; align-items: center; justify-content: space-between; gap: 14px; width: 100%; margin-top: auto; padding-top: 19px; color: #f0e8da; font: 800 11px/1.2 "Manrope", sans-serif; letter-spacing: .09em; }
+.item-kind { width: fit-content; margin-bottom: 14px; padding: 7px 9px; color: #06100b; background: var(--accent); font: 700 10px/1 "Manrope", sans-serif; letter-spacing: .1em; }
+.catalog-card strong { max-width: 430px; color: #f3eee3; font: 700 clamp(18px, 5.3vw, 27px)/1.13 "Montserrat", sans-serif; letter-spacing: .005em; }
+.catalog-card .item-description { margin-top: 11px; color: #cfcbc2; font-size: 13px; line-height: 1.5; }
+.catalog-card .item-date { width: fit-content; margin-top: 16px; padding: 11px 12px; color: #fff1d5; border: 1px solid color-mix(in srgb, var(--accent) 82%, transparent); background: color-mix(in srgb, var(--accent) 24%, transparent); font: 800 15px/1.05 "Manrope", sans-serif; letter-spacing: .055em; }
+.catalog-card .item-action { display: flex; align-items: center; justify-content: space-between; gap: 14px; width: 100%; margin-top: auto; padding-top: 20px; color: #f0e8da; font: 700 12px/1.2 "Manrope", sans-serif; letter-spacing: .065em; }
 .item-action b { color: var(--accent); font-size: 20px; line-height: 1; }
 .program-card-new { min-height: 232px; border-left-width: 7px; background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 35%, #11150f), #101510 70%); }
 .program-card-new .item-kind { color: #f7f1e7; background: transparent; border: 1px solid var(--accent); }
-.program-card-new strong { font-size: clamp(19px, 5.7vw, 29px); }
+.program-card-new strong { font-size: clamp(21px, 6vw, 30px); line-height: 1.12; }
 .community-card, .expedition-card { min-height: 190px; }
 .system-footer { display: grid; grid-template-columns: 44px minmax(0,1fr); align-items: start; gap: 14px; padding: 31px 22px 36px; background: #050a07; }
 .system-footer img { width: 42px; height: 42px; filter: brightness(0) invert(1); opacity: .9; }
@@ -364,10 +364,10 @@ footer p { margin: 0; font-size: 10px; line-height: 1.35; }
   .catalog-group { padding: 46px 34px 50px; }
   .group-header { grid-template-columns: 76px minmax(0,1fr); gap: 24px; }
   .group-number { font-size: 39px; }
-  .group-header p { font-size: 13px; }
+  .group-header p { font-size: 14px; }
   .catalog-card { margin-left: 100px; padding: 24px 24px 19px; }
-  .catalog-card .item-description { font-size: 13px; }
-  .catalog-card .item-action { font-size: 12px; }
+  .catalog-card .item-description { font-size: 14px; }
+  .catalog-card .item-action { font-size: 13px; }
 }
 @media (max-width: 390px) {
   .catalog-hero { min-height: 510px; }
@@ -375,6 +375,7 @@ footer p { margin: 0; font-size: 10px; line-height: 1.35; }
   .group-header { grid-template-columns: 48px minmax(0,1fr); gap: 11px; }
   .group-number { font-size: 25px; }
   .catalog-card { margin-left: 59px; padding-left: 14px; padding-right: 14px; }
-  .catalog-card strong { font-size: 16px; }
-  .program-card-new strong { font-size: 17px; }
+  .catalog-card strong { font-size: 17px; }
+  .program-card-new strong { font-size: 19px; }
+  .catalog-card .item-date { font-size: 13px; letter-spacing: .035em; }
 }

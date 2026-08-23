@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>КОРТИЗОЛ — ВЕДАНИЕ</title>
+<style>
+:root{
+  --teal:#07777B;
+  --green:#047865;
+  --deep:#05531D;
+  --orange:#CC5F1A;
+  --ink:#202522;
+  --muted:#5c625f;
+  --paper:#F7F4EC;
+  --paper-2:#FBF9F4;
+  --line:#D9DFD8;
+  --soft:#EEF3EF;
+  --warm:#F8EEE5;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:18px;line-height:1.68;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{width:min(1180px,calc(100% - 48px));margin:0 auto}
+.topbar{height:72px;display:flex;align-items:center;border-bottom:1px solid rgba(7,119,123,.15);background:rgba(247,244,236,.92);backdrop-filter:blur(12px);position:relative;z-index:3}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between}
+.logo{display:block;width:50px;height:50px;object-fit:contain}
+.brandline{font-size:12px;letter-spacing:.16em;color:var(--teal);font-weight:700;text-transform:uppercase}
+.hero{height:min(650px,calc(100svh - 72px));min-height:540px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;height:100%;min-height:0}
+.hero-copy{padding:44px 56px 44px 0;display:flex;flex-direction:column;justify-content:center}
+.kicker{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:800;margin-bottom:14px}
+h1{font-size:clamp(56px,6.4vw,92px);line-height:.92;letter-spacing:-.055em;margin:0 0 18px;color:var(--teal);font-weight:800}
+.subtitle{font-size:clamp(22px,2.2vw,31px);line-height:1.2;max-width:690px;margin:0 0 20px;font-weight:650}
+.lead{font-size:18px;line-height:1.5;max-width:690px;margin:0;color:#3e4541}
+.hero-photo{position:relative;height:100%;min-height:0;overflow:hidden;border-left:1px solid var(--line)}
+.hero-photo picture{display:block;width:100%;height:100%}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center center;display:block}
+.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(247,244,236,.16),transparent 24%,transparent 75%,rgba(7,119,123,.05));pointer-events:none}
+.intro{padding:72px 0 26px}
+.intro h2{max-width:940px;font-size:clamp(30px,4vw,50px);line-height:1.12;letter-spacing:-.025em;margin:0 0 28px;color:var(--teal)}
+.intro p{max-width:920px;margin:0 0 18px}
+.divider{width:74px;height:3px;background:var(--orange);margin:42px 0 0}
+.content{padding:40px 0 84px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.section{background:var(--paper-2);border:1px solid var(--line);border-radius:22px;padding:34px 34px 32px;box-shadow:0 10px 30px rgba(30,62,48,.035)}
+.section.full{grid-column:1/-1}
+.section h3{font-size:26px;line-height:1.18;margin:0 0 20px;color:var(--teal);letter-spacing:-.018em}
+.section h3 .n{color:var(--orange);margin-right:8px}
+.section p{margin:0 0 16px}
+.section p:last-child{margin-bottom:0}
+.callout{margin-top:22px;padding:18px 20px;border-left:3px solid var(--green);background:#EEF5F1;border-radius:0 12px 12px 0}
+.callout.orange{border-left-color:var(--orange);background:var(--warm)}
+.label{font-weight:800;color:var(--deep)}
+.checks{display:grid;gap:11px;margin:16px 0 18px}
+.check{display:flex;gap:12px;align-items:flex-start}
+.box{width:19px;height:19px;border:1.5px solid rgba(7,119,123,.45);border-radius:4px;flex:0 0 auto;margin-top:6px;background:#fff}
+.rituals{display:grid;gap:18px;margin-top:18px}
+.ritual{padding:0 0 18px;border-bottom:1px solid var(--line)}
+.ritual:last-child{border-bottom:0;padding-bottom:0}
+.protocol{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:22px}
+.protocol-item{padding:24px;background:#fff}
+.protocol-item + .protocol-item{border-left:1px solid var(--line)}
+.protocol-title{font-size:15px;letter-spacing:.08em;font-weight:900;color:var(--teal);margin-bottom:9px}
+.vedanie{background:linear-gradient(135deg,#F8F6EF 0%,#EEF5F1 100%);border-color:rgba(7,119,123,.25);position:relative;overflow:hidden}
+.vedanie:before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-80px;top:-90px;background:radial-gradient(circle,rgba(7,119,123,.11),rgba(7,119,123,0) 68%)}
+.vedanie h3{font-size:32px;max-width:820px}
+.emphasis{font-size:22px;line-height:1.45;color:var(--teal);font-weight:800;margin:24px 0}
+.cta-row{display:flex;justify-content:center;margin-top:28px}
+.cta{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 26px;border-radius:12px;background:var(--teal);color:white;text-decoration:none;font-weight:800;box-shadow:0 8px 20px rgba(7,119,123,.16);transition:.2s}
+.cta:hover{transform:translateY(-1px);background:var(--green)}
+.webinars{margin-top:24px;background:var(--paper-2);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.webinars h3{margin:0;padding:28px 30px 22px;color:var(--orange);font-size:29px}
+.webinar{display:grid;grid-template-columns:270px 1fr;border-top:1px solid var(--line)}
+.webinar-time{padding:24px 30px;font-weight:850;color:var(--deep);background:#F0F5F1}
+.webinar-text{padding:24px 30px}
+.footer{padding:28px 0 54px;text-align:center;color:var(--teal);font-weight:800}
+.footer a{text-underline-offset:4px}
+
+@media (max-width:900px){
+  body{font-size:17px;line-height:1.62}
+  .wrap{width:min(100% - 32px,720px)}
+  .topbar{height:64px}
+  .logo{width:44px;height:44px}
+  .brandline{font-size:11px}
+  .hero{height:auto;min-height:auto}
+  .hero-grid{grid-template-columns:1fr;height:auto;min-height:auto}
+  .hero-copy{padding:42px 0 30px}
+  h1{font-size:clamp(58px,18vw,82px)}
+  .subtitle{font-size:26px}
+  .lead{font-size:18px}
+  .hero-photo{height:390px;min-height:0;border-left:0;border-top:1px solid var(--line);border-radius:0}
+  .hero-photo img{object-position:50% 36%}
+  .intro{padding:54px 0 18px}
+  .grid{grid-template-columns:1fr;gap:18px}
+  .section.full{grid-column:auto}
+  .section{padding:26px 22px;border-radius:18px}
+  .section h3{font-size:24px}
+  .protocol{grid-template-columns:1fr}
+  .protocol-item + .protocol-item{border-left:0;border-top:1px solid var(--line)}
+  .vedanie h3{font-size:27px}
+  .emphasis{font-size:20px}
+  .webinar{grid-template-columns:1fr}
+  .webinar-time{padding:18px 22px 10px;background:#F0F5F1}
+  .webinar-text{padding:10px 22px 22px;background:#F0F5F1}
+}
+@media (max-width:520px){
+  .wrap{width:calc(100% - 24px)}
+  .hero-copy{padding-top:38px}
+  .kicker{margin-bottom:14px}
+  h1{font-size:59px}
+  .subtitle{font-size:23px}
+  .hero-photo{height:350px;min-height:0}
+  .intro h2{font-size:31px}
+  .section{padding:24px 18px}
+  .section h3{font-size:22px}
+  .webinars h3{padding:24px 20px 18px;font-size:25px}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <img class="logo" src="logo.webp" alt="ВЕДАНИЕ" />
+    <div class="brandline">ВЕДАНИЕ • КОРТИЗОЛ</div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="kicker">ВЕДАНИЕ • КОРТИЗОЛ</div>
+        <h1>КОРТИЗОЛ</h1>
+        <p class="subtitle">Инструкция по восстановлению системы стресса</p>
+        <p class="lead">Проверьте себя: возможно, Ваше тело уже давно просит не «отдохнуть», а восстановить систему регуляции</p>
+      </div>
+      <div class="hero-photo">
+        <picture>
+          <source media="(max-width: 900px)" srcset="hero.webp">
+          <img src="hero.webp" alt="Наташа Сведовая" />
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="wrap">
+      <h2>Усталость, тяга к сладкому, бессонница, проблемы с кожей — а кортизол в анализе «в норме»?</h2>
+      <p>Кортизол — не враг. Он нужен нам каждое утро, чтобы проснуться, мобилизовать энергию и адаптироваться к нагрузке.</p>
+      <p>Проблема не в самом кортизоле. Проблема в том, что система стресса застряла в режиме «мобилизация», а переключение в восстановление сломалось.</p>
+      <p>Давайте проведём мини-расследование и посмотрим, что происходит с кортизолом после того, как он сделал свою работу.</p>
+      <div class="divider"></div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="wrap grid">
+      <article class="section">
+        <h3><span class="n">1.</span> ЧТО ПРОИСХОДИТ С КОРТИЗОЛОМ В ОРГАНИЗМЕ?</h3>
+        <p>Кортизол рождается в надпочечниках. Его уровень подчинён циркадному ритму: утром он высокий, чтобы Вы встали, к ночи падает, чтобы Вы уснули.</p>
+        <p>Но кортизол не должен бесконечно циркулировать в крови.</p>
+        <p>После выполнения работы он отправляется в <strong>печень.</strong> Там происходит биохимическая трансформация: кортизол превращается в водорастворимые метаболиты. Дальше путь раздваивается: основная часть уходит через почки с мочой, а меньшая — через желчь в кишечник.</p>
+        <div class="callout"><strong>Главный вывод:</strong> нормальный уровень кортизола — это не только вопрос «сколько произвели надпочечники». Это вопрос «как организм его переработал и вывел».</div>
+      </article>
+
+      <article class="section">
+        <h3><span class="n">2.</span> У ВАС ЕСТЬ ЭТИ ПРИЗНАКИ?</h3>
+        <p>Проверьте свой циркадный ритм и систему адаптации:</p>
+        <div class="label">Проверьте себя:</div>
+        <div class="checks">
+          <div class="check"><span class="box"></span><span>Утром тяжело проснуться, а вечером просыпается «вторая жизнь».</span></div>
+          <div class="check"><span class="box"></span><span>Трудно уснуть, хотя тело устало.</span></div>
+          <div class="check"><span class="box"></span><span>После 8 часов сна чувствуете себя разбитой.</span></div>
+          <div class="check"><span class="box"></span><span>Без кофе, сладкого или телефона утром не начать день.</span></div>
+        </div>
+        <p>Если узнали себя — это не обязательно означает «высокий кортизол». Это сигнал, что система регуляции сбоит.</p>
+      </article>
+
+      <article class="section">
+        <h3><span class="n">3.</span> ПОЧЕМУ АНАЛИЗ МОЖЕТ БЫТЬ НОРМАЛЬНЫМ?</h3>
+        <p>Потому что кортизол динамичен.</p>
+        <p>Его уровень скачет от времени суток, стресса в очереди перед лабораторией, недосыпа и даже мысли о работе. Один срез крови не покажет, как работает Ваша система стресс-адаптации в динамике.</p>
+        <div class="callout"><strong>Важно:</strong> цифра в референсе не отменяет Вашего состояния. Нужно смотреть на картину целиком.</div>
+      </article>
+
+      <article class="section">
+        <h3><span class="n">4.</span> КОРТИЗОЛ → ГЛЮКОЗА → ТЯГА К ЕДЕ</h3>
+        <p>Кортизол мобилизует глюкозу, чтобы дать Вам энергию для реакции «бей или беги». Но если Вы не бежите от тигра, а сидите в дедлайне, эта глюкоза остаётся в крови. Организм в панике требует инсулина, а потом — новой энергии.</p>
+        <div class="label">Мини-тест:</div>
+        <div class="checks">
+          <div class="check"><span class="box"></span><span>Утром пьёте кофе вместо еды.</span></div>
+          <div class="check"><span class="box"></span><span>Днём можете забыть поесть, вечером сметаете всё.</span></div>
+          <div class="check"><span class="box"></span><span>После стресса тянет на конкретное: шоколад, выпечка, чипсы.</span></div>
+          <div class="check"><span class="box"></span><span>Еда — главный способ успокоиться.</span></div>
+        </div>
+        <p><em>Если тяга к сладкому зависит от качества Вашего сна и уровня стресса, проблема глубже, чем «слабая сила воли».</em></p>
+      </article>
+
+      <article class="section">
+        <h3><span class="n">5.</span> КОРТИЗОЛ → КОЖА</h3>
+        <p>Кожа — зеркало системных сбоев. Хронический стресс бьёт по защитному барьеру и запускает скрытые воспаления.</p>
+        <p>Прыщ ≠ высокий кортизол. Сухость ≠ высокий кортизол.<br>Но связка «стресс + недосып + скачки глюкозы» всегда проявится на лице.</p>
+        <div class="label">Мини-тест:</div>
+        <div class="checks">
+          <div class="check"><span class="box"></span><span>Кожа реагирует воспалениями на нервную неделю.</span></div>
+          <div class="check"><span class="box"></span><span>Утром лицо отёчное и уставшее.</span></div>
+          <div class="check"><span class="box"></span><span>Кожный барьер стал чувствительным, появились шелушения.</span></div>
+        </div>
+        <p><em>Крем здесь не решит проблему. Нужно чинить фундамент.</em></p>
+      </article>
+
+      <article class="section">
+        <h3><span class="n">6.</span> ПЕЧЕНЬ, КИШЕЧНИК И ВЫВЕДЕНИЕ МЕТАБОЛИТОВ</h3>
+        <p>Забудьте мифы про «шлаки» и «грязный кишечник, который не даёт уйти кортизолу». Биохимия точнее.</p>
+        <p>Печень — это главная лаборатория по утилизации отработанных гормонов. А кишечник и желчный пузырь — пути эвакуации. Если желчь густая, а перистальтика вялая, метаболиты задерживаются, создавая лишнюю нагрузку на систему.</p>
+        <div class="label">Проверьте конвейер:</div>
+        <div class="checks">
+          <div class="check"><span class="box"></span><span>Тяжесть после еды, вздутие.</span></div>
+          <div class="check"><span class="box"></span><span>Стул нерегулярный.</span></div>
+          <div class="check"><span class="box"></span><span>В рационе мало клетчатки и воды.</span></div>
+        </div>
+        <p><em>Ваша задача — не «чистить» органы. Ваша задача — дать им ресурс (белок, микронутриенты, воду, движение) для бесперебойной работы.</em></p>
+      </article>
+
+      <article class="section full">
+        <h3><span class="n">7.</span> ТРИ ДРЕВНИЕ СИСТЕМЫ ДЛЯ ПЕРЕКЛЮЧЕНИЯ</h3>
+        <p>Вам не нужны сложные ритуалы. Нужны якоря, которые дают телу сигнал: «Мы в безопасности, можно выдыхать». Какой из трёх подходов Вам нужен больше всего?</p>
+        <div class="rituals">
+          <div class="ritual"><strong>🌿 Аюрведа.</strong> Тёплое масло на стопы перед сном.<br>Это не про «вывод токсинов», а про глубокий тактильный ритуал, который переключает нервную систему в парасимпатику.</div>
+          <div class="ritual"><strong>🌲 Япония.</strong> Шинрин-йоку (лесная ванна). 20 минут в парке без телефона и подкастов. Просто наблюдение за природой снижает уровень стрессовых маркеров.</div>
+          <div class="ritual"><strong>🌬️ Китай.</strong> Цигун. 5–10 минут медленных движений в связке с дыханием. Это работает лучше, чем час изматывающего кардио на фоне недосыпа.</div>
+        </div>
+      </article>
+
+      <article class="section full">
+        <h3><span class="n">8.</span> БАЗОВЫЙ ПРОТОКОЛ ВОССТАНОВЛЕНИЯ</h3>
+        <p>Забудьте про десятки БАДов. Начните с физиологии, которая возвращает телу ритм.</p>
+        <div class="protocol">
+          <div class="protocol-item"><div class="protocol-title">☀ УТРО</div><div>Дневной свет в глаза в первые 30 минут после пробуждения. Белковый завтрак. Кофе — только после еды, не вместо сна.</div></div>
+          <div class="protocol-item"><div class="protocol-title">● ДЕНЬ</div><div>Ходьба без цели. Вода. Регулярные приёмы пищи, чтобы не было скачков глюкозы.</div></div>
+          <div class="protocol-item"><div class="protocol-title">☾ ВЕЧЕР</div><div>Приглушённый свет за 2 часа до сна. Тепло (ванна или душ). Медленное дыхание. Стабильное время отбоя.</div></div>
+        </div>
+      </article>
+
+      <article class="section full">
+        <h3><span class="n">9.</span> ФИНАЛЬНАЯ ДИАГНОСТИКА</h3>
+        <p>Ответьте себе честно:</p>
+        <div class="checks">
+          <div class="check"><span class="box"></span><span>Я просыпаюсь отдохнувшей.</span></div>
+          <div class="check"><span class="box"></span><span>Моё тело умеет расслабляться без телефона и еды.</span></div>
+          <div class="check"><span class="box"></span><span>После выходного я чувствую себя лучше, а не разбитой.</span></div>
+          <div class="check"><span class="box"></span><span>Я понимаю сигналы своего тела.</span></div>
+        </div>
+        <div class="callout orange">Если большинство ответов — «нет», Вам нужно работать не с одной цифрой кортизола. Вам нужно восстанавливать систему целиком.</div>
+      </article>
+
+      <article class="section full vedanie">
+        <h3>ИМЕННО ЭТО МЫ БУДЕМ ДЕЛАТЬ В ВЕДАНИЕ</h3>
+        <p>В сентябре в пространстве ВЕДАНИЕ мы пройдём путь от биохимии стресса до реальных изменений в теле. Сон, печень, кишечник, гормональный баланс, кожа и энергия — мы соберём это в единую работающую схему.</p>
+        <p>Я поделюсь авторскими природными протоколами и тем, как соединить древние практики с современным пониманием физиологии.</p>
+        <p>Не для того, чтобы просто сказать Вам: «меньше стрессуйте и больше спите».</p>
+        <div class="emphasis">А чтобы Вы начали понимать:<br>ЧТО ПРОИСХОДИТ В ВАШЕМ ТЕЛЕ<br>ПОЧЕМУ ЭТО ПРОИСХОДИТ<br>И ЧТО МОЖНО С ЭТИМ ДЕЛАТЬ</div>
+        <p>Первые изменения в самочувствии многие замечают уже в первые дни работы с режимом, сном и питанием.</p>
+        <p>Если Вы узнали себя в этом гайде — приходите в ВЕДАНИЕ.<br>Там начинается следующий уровень: не просто знать, что такое кортизол, а научиться читать сигналы собственного организма и выстраивать восстановление как систему.</p>
+        <div class="cta-row"><a class="cta" href="https://vedanie.urban-queen.com">ПЕРЕЙТИ В ВЕДАНИЕ</a></div>
+      </article>
+    </div>
+
+    <div class="wrap">
+      <section class="webinars">
+        <h3>ОТКРЫТЫЕ ВЕБИНАРЫ</h3>
+        <div class="webinar"><div class="webinar-time">27 августа, 18:00 мск</div><div class="webinar-text">«Что кортизол на самом деле делает с Вашим телом и кожей? Часть 1. О сосудах, нервной системе, почках и гормонах»</div></div>
+        <div class="webinar"><div class="webinar-time">3 сентября, 18:00</div><div class="webinar-text">«Что кортизол на самом деле делает с Вашим телом и кожей? Часть 2. О гормонах, либидо, фертильности, старении, отёках и пигментации»</div></div>
+      </section>
+      <div class="footer"><a href="https://vedanie.urban-queen.com">vedanie.urban-queen.com</a></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

@@ -77,192 +77,27 @@ h1{font-size:clamp(56px,6.4vw,92px);line-height:.92;letter-spacing:-.055em;margi
 .webinar-text{padding:24px 30px}
 .footer{padding:28px 0 54px;text-align:center;color:var(--teal);font-weight:800}
 .footer a{text-underline-offset:4px}
-@media (max-width:900px){
-  body{font-size:17px;line-height:1.62}
-  .wrap{width:min(100% - 32px,720px)}
-  .topbar{height:64px}
-  .logo{width:44px;height:44px}
-  .brandline{font-size:11px}
-  .hero{height:auto;min-height:auto}
-  .hero-grid{grid-template-columns:1fr;height:auto;min-height:auto}
-  .hero-copy{padding:42px 0 30px}
-  h1{font-size:clamp(58px,18vw,82px)}
-  .subtitle{font-size:26px}
-  .lead{font-size:18px}
-  .hero-photo{height:390px;min-height:0;border-left:0;border-top:1px solid var(--line);border-radius:0}
-  .hero-photo img{object-position:50% 36%}
-  .intro{padding:54px 0 18px}
-  .grid{grid-template-columns:1fr;gap:18px}
-  .section.full{grid-column:auto}
-  .section{padding:26px 22px;border-radius:18px}
-  .section h3{font-size:24px}
-  .protocol{grid-template-columns:1fr}
-  .protocol-item + .protocol-item{border-left:0;border-top:1px solid var(--line)}
-  .vedanie h3{font-size:27px}
-  .emphasis{font-size:20px}
-  .webinar{grid-template-columns:1fr}
-  .webinar-time{padding:18px 22px 10px;background:#F0F5F1}
-  .webinar-text{padding:10px 22px 22px;background:#F0F5F1}
-}
-@media (max-width:520px){
-  .wrap{width:calc(100% - 24px)}
-  .hero-copy{padding-top:38px}
-  .kicker{margin-bottom:14px}
-  h1{font-size:59px}
-  .subtitle{font-size:23px}
-  .hero-photo{height:350px;min-height:0}
-  .intro h2{font-size:31px}
-  .section{padding:24px 18px}
-  .section h3{font-size:22px}
-  .webinars h3{padding:24px 20px 18px;font-size:25px}
-}
+@media (max-width:900px){body{font-size:17px;line-height:1.62}.wrap{width:min(100% - 32px,720px)}.topbar{height:64px}.logo{width:44px;height:44px}.brandline{font-size:11px}.hero{height:auto;min-height:auto}.hero-grid{grid-template-columns:1fr;height:auto;min-height:auto}.hero-copy{padding:42px 0 30px}h1{font-size:clamp(58px,18vw,82px)}.subtitle{font-size:26px}.lead{font-size:18px}.hero-photo{height:390px;min-height:0;border-left:0;border-top:1px solid var(--line);border-radius:0}.hero-photo img{object-position:50% 36%}.intro{padding:54px 0 18px}.grid{grid-template-columns:1fr;gap:18px}.section.full{grid-column:auto}.section{padding:26px 22px;border-radius:18px}.section h3{font-size:24px}.protocol{grid-template-columns:1fr}.protocol-item + .protocol-item{border-left:0;border-top:1px solid var(--line)}.vedanie h3{font-size:27px}.emphasis{font-size:20px}.webinar{grid-template-columns:1fr}.webinar-time{padding:18px 22px 10px;background:#F0F5F1}.webinar-text{padding:10px 22px 22px;background:#F0F5F1}}
+@media (max-width:520px){.wrap{width:calc(100% - 24px)}.hero-copy{padding-top:38px}.kicker{margin-bottom:14px}h1{font-size:59px}.subtitle{font-size:23px}.hero-photo{height:350px;min-height:0}.intro h2{font-size:31px}.section{padding:24px 18px}.section h3{font-size:22px}.webinars h3{padding:24px 20px 18px;font-size:25px}}
 </style>
 </head>
 <body>
-<header class="topbar">
-  <div class="wrap">
-    <img class="logo" src="logo.webp" alt="ВЕДАНИЕ" />
-    <div class="brandline">ВЕДАНИЕ • КОРТИЗОЛ</div>
-  </div>
-</header>
+<header class="topbar"><div class="wrap"><img class="logo" src="logo.webp" alt="ВЕДАНИЕ" /><div class="brandline">ВЕДАНИЕ • КОРТИЗОЛ</div></div></header>
 <main>
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <div class="kicker">ВЕДАНИЕ • КОРТИЗОЛ</div>
-        <h1>КОРТИЗОЛ</h1>
-        <p class="subtitle">Инструкция по восстановлению системы стресса</p>
-        <p class="lead">Проверьте себя: возможно, Ваше тело уже давно просит не «отдохнуть», а восстановить систему регуляции</p>
-      </div>
-      <div class="hero-photo">
-        <picture>
-          <source media="(max-width: 900px)" srcset="hero.webp?v=2">
-          <img src="hero.webp?v=2" alt="Наташа Сведовая" />
-        </picture>
-      </div>
-    </div>
-  </section>
-  <section class="intro">
-    <div class="wrap">
-      <h2>Усталость, тяга к сладкому, бессонница, проблемы с кожей — а кортизол в анализе «в норме»?</h2>
-      <p>Кортизол — не враг. Он нужен нам каждое утро, чтобы проснуться, мобилизовать энергию и адаптироваться к нагрузке.</p>
-      <p>Проблема не в самом кортизоле. Проблема в том, что система стресса застряла в режиме «мобилизация», а переключение в восстановление сломалось.</p>
-      <p>Давайте проведём мини-расследование и посмотрим, что происходит с кортизолом после того, как он сделал свою работу.</p>
-      <div class="divider"></div>
-    </div>
-  </section>
-  <section class="content">
-    <div class="wrap grid">
-      <article class="section">
-        <h3><span class="n">1.</span> ЧТО ПРОИСХОДИТ С КОРТИЗОЛОМ В ОРГАНИЗМЕ?</h3>
-        <p>Кортизол рождается в надпочечниках. Его уровень подчинён циркадному ритму: утром он высокий, чтобы Вы встали, к ночи падает, чтобы Вы уснули.</p>
-        <p>Но кортизол не должен бесконечно циркулировать в крови.</p>
-        <p>После выполнения работы он отправляется в <strong>печень.</strong> Там происходит биохимическая трансформация: кортизол превращается в водорастворимые метаболиты. Дальше путь раздваивается: основная часть уходит через почки с мочой, а меньшая — через желчь в кишечник.</p>
-        <div class="callout"><strong>Главный вывод:</strong> нормальный уровень кортизола — это не только вопрос «сколько произвели надпочечники». Это вопрос «как организм его переработал и вывел».</div>
-      </article>
-      <article class="section">
-        <h3><span class="n">2.</span> У ВАС ЕСТЬ ЭТИ ПРИЗНАКИ?</h3>
-        <p>Проверьте свой циркадный ритм и систему адаптации:</p>
-        <div class="label">Проверьте себя:</div>
-        <div class="checks">
-          <div class="check"><span class="box"></span><span>Утром тяжело проснуться, а вечером просыпается «вторая жизнь».</span></div>
-          <div class="check"><span class="box"></span><span>Трудно уснуть, хотя тело устало.</span></div>
-          <div class="check"><span class="box"></span><span>После 8 часов сна чувствуете себя разбитой.</span></div>
-          <div class="check"><span class="box"></span><span>Без кофе, сладкого или телефона утром не начать день.</span></div>
-        </div>
-        <p>Если узнали себя — это не обязательно означает «высокий кортизол». Это сигнал, что система регуляции сбоит.</p>
-      </article>
-      <article class="section">
-        <h3><span class="n">3.</span> ПОЧЕМУ АНАЛИЗ МОЖЕТ БЫТЬ НОРМАЛЬНЫМ?</h3>
-        <p>Потому что кортизол динамичен.</p>
-        <p>Его уровень скачет от времени суток, стресса в очереди перед лабораторией, недосыпа и даже мысли о работе. Один срез крови не покажет, как работает Ваша система стресс-адаптации в динамике.</p>
-        <div class="callout"><strong>Важно:</strong> цифра в референсе не отменяет Вашего состояния. Нужно смотреть на картину целиком.</div>
-      </article>
-      <article class="section">
-        <h3><span class="n">4.</span> КОРТИЗОЛ → ГЛЮКОЗА → ТЯГА К ЕДЕ</h3>
-        <p>Кортизол мобилизует глюкозу, чтобы дать Вам энергию для реакции «бей или беги». Но если Вы не бежите от тигра, а сидите в дедлайне, эта глюкоза остаётся в крови. Организм в панике требует инсулина, а потом — новой энергии.</p>
-        <div class="label">Мини-тест:</div>
-        <div class="checks">
-          <div class="check"><span class="box"></span><span>Утром пьёте кофе вместо еды.</span></div>
-          <div class="check"><span class="box"></span><span>Днём можете забыть поесть, вечером сметаете всё.</span></div>
-          <div class="check"><span class="box"></span><span>После стресса тянет на конкретное: шоколад, выпечка, чипсы.</span></div>
-          <div class="check"><span class="box"></span><span>Еда — главный способ успокоиться.</span></div>
-        </div>
-        <p><em>Если тяга к сладкому зависит от качества Вашего сна и уровня стресса, проблема глубже, чем «слабая сила воли».</em></p>
-      </article>
-      <article class="section">
-        <h3><span class="n">5.</span> КОРТИЗОЛ → КОЖА</h3>
-        <p>Кожа — зеркало системных сбоев. Хронический стресс бьёт по защитному барьеру и запускает скрытые воспаления.</p>
-        <p>Прыщ ≠ высокий кортизол. Сухость ≠ высокий кортизол.<br>Но связка «стресс + недосып + скачки глюкозы» всегда проявится на лице.</p>
-        <div class="label">Мини-тест:</div>
-        <div class="checks">
-          <div class="check"><span class="box"></span><span>Кожа реагирует воспалениями на нервную неделю.</span></div>
-          <div class="check"><span class="box"></span><span>Утром лицо отёчное и уставшее.</span></div>
-          <div class="check"><span class="box"></span><span>Кожный барьер стал чувствительным, появились шелушения.</span></div>
-        </div>
-        <p><em>Крем здесь не решит проблему. Нужно чинить фундамент.</em></p>
-      </article>
-      <article class="section">
-        <h3><span class="n">6.</span> ПЕЧЕНЬ, КИШЕЧНИК И ВЫВЕДЕНИЕ МЕТАБОЛИТОВ</h3>
-        <p>Забудьте мифы про «шлаки» и «грязный кишечник, который не даёт уйти кортизолу». Биохимия точнее.</p>
-        <p>Печень — это главная лаборатория по утилизации отработанных гормонов. А кишечник и желчный пузырь — пути эвакуации. Если желчь густая, а перистальтика вялая, метаболиты задерживаются, создавая лишнюю нагрузку на систему.</p>
-        <div class="label">Проверьте конвейер:</div>
-        <div class="checks">
-          <div class="check"><span class="box"></span><span>Тяжесть после еды, вздутие.</span></div>
-          <div class="check"><span class="box"></span><span>Стул нерегулярный.</span></div>
-          <div class="check"><span class="box"></span><span>В рационе мало клетчатки и воды.</span></div>
-        </div>
-        <p><em>Ваша задача — не «чистить» органы. Ваша задача — дать им ресурс (белок, микронутриенты, воду, движение) для бесперебойной работы.</em></p>
-      </article>
-      <article class="section full">
-        <h3><span class="n">7.</span> ТРИ ДРЕВНИЕ СИСТЕМЫ ДЛЯ ПЕРЕКЛЮЧЕНИЯ</h3>
-        <p>Вам не нужны сложные ритуалы. Нужны якоря, которые дают телу сигнал: «Мы в безопасности, можно выдыхать». Какой из трёх подходов Вам нужен больше всего?</p>
-        <div class="rituals">
-          <div class="ritual"><strong>🌿 Аюрведа.</strong> Тёплое масло на стопы перед сном.<br>Это не про «вывод токсинов», а про глубокий тактильный ритуал, который переключает нервную систему в парасимпатику.</div>
-          <div class="ritual"><strong>🌲 Япония.</strong> Шинрин-йоку (лесная ванна). 20 минут в парке без телефона и подкастов. Просто наблюдение за природой снижает уровень стрессовых маркеров.</div>
-          <div class="ritual"><strong>🌬️ Китай.</strong> Цигун. 5–10 минут медленных движений в связке с дыханием. Это работает лучше, чем час изматывающего кардио на фоне недосыпа.</div>
-        </div>
-      </article>
-      <article class="section full">
-        <h3><span class="n">8.</span> БАЗОВЫЙ ПРОТОКОЛ ВОССТАНОВЛЕНИЯ</h3>
-        <p>Забудьте про десятки БАДов. Начните с физиологии, которая возвращает телу ритм.</p>
-        <div class="protocol">
-          <div class="protocol-item"><div class="protocol-title">☀ УТРО</div><div>Дневной свет в глаза в первые 30 минут после пробуждения. Белковый завтрак. Кофе — только после еды, не вместо сна.</div></div>
-          <div class="protocol-item"><div class="protocol-title">● ДЕНЬ</div><div>Ходьба без цели. Вода. Регулярные приёмы пищи, чтобы не было скачков глюкозы.</div></div>
-          <div class="protocol-item"><div class="protocol-title">☾ ВЕЧЕР</div><div>Приглушённый свет за 2 часа до сна. Тепло (ванна или душ). Медленное дыхание. Стабильное время отбоя.</div></div>
-        </div>
-      </article>
-      <article class="section full">
-        <h3><span class="n">9.</span> ФИНАЛЬНАЯ ДИАГНОСТИКА</h3>
-        <p>Ответьте себе честно:</p>
-        <div class="checks">
-          <div class="check"><span class="box"></span><span>Я просыпаюсь отдохнувшей.</span></div>
-          <div class="check"><span class="box"></span><span>Моё тело умеет расслабляться без телефона и еды.</span></div>
-          <div class="check"><span class="box"></span><span>После выходного я чувствую себя лучше, а не разбитой.</span></div>
-          <div class="check"><span class="box"></span><span>Я понимаю сигналы своего тела.</span></div>
-        </div>
-        <div class="callout orange">Если большинство ответов — «нет», Вам нужно работать не с одной цифрой кортизола. Вам нужно восстанавливать систему целиком.</div>
-      </article>
-      <article class="section full vedanie">
-        <h3>ИМЕННО ЭТО МЫ БУДЕМ ДЕЛАТЬ В ВЕДАНИЕ</h3>
-        <p>В сентябре в пространстве ВЕДАНИЕ мы пройдём путь от биохимии стресса до реальных изменений в теле. Сон, печень, кишечник, гормональный баланс, кожа и энергия — мы соберём это в единую работающую схему.</p>
-        <p>Я поделюсь авторскими природными протоколами и тем, как соединить древние практики с современным пониманием физиологии.</p>
-        <p>Не для того, чтобы просто сказать Вам: «меньше стрессуйте и больше спите».</p>
-        <div class="emphasis">А чтобы Вы начали понимать:<br>ЧТО ПРОИСХОДИТ В ВАШЕМ ТЕЛЕ<br>ПОЧЕМУ ЭТО ПРОИСХОДИТ<br>И ЧТО МОЖНО С ЭТИМ ДЕЛАТЬ</div>
-        <p>Первые изменения в самочувствии многие замечают уже в первые дни работы с режимом, сном и питанием.</p>
-        <p>Если Вы узнали себя в этом гайде — приходите в ВЕДАНИЕ.<br>Там начинается следующий уровень: не просто знать, что такое кортизол, а научиться читать сигналы собственного организма и выстраивать восстановление как систему.</p>
-        <div class="cta-row"><a class="cta" href="https://vedanie.urban-queen.com">ПЕРЕЙТИ В ВЕДАНИЕ</a></div>
-      </article>
-    </div>
-    <div class="wrap">
-      <section class="webinars">
-        <h3>ОТКРЫТЫЕ ВЕБИНАРЫ</h3>
-        <div class="webinar"><div class="webinar-time">27 августа, 18:00 мск</div><div class="webinar-text">«Что кортизол на самом деле делает с Вашим телом и кожей? Часть 1. О сосудах, нервной системе, почках и гормонах»</div></div>
-        <div class="webinar"><div class="webinar-time">3 сентября, 18:00</div><div class="webinar-text">«Что кортизол на самом деле делает с Вашим телом и кожей? Часть 2. О гормонах, либидо, фертильности, старении, отёках и пигментации»</div></div>
-      </section>
-      <div class="footer"><a href="https://vedanie.urban-queen.com">vedanie.urban-queen.com</a></div>
-    </div>
-  </section>
+<section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><div class="kicker">ВЕДАНИЕ • КОРТИЗОЛ</div><h1>КОРТИЗОЛ</h1><p class="subtitle">Инструкция по восстановлению системы стресса</p><p class="lead">Проверьте себя: возможно, Ваше тело уже давно просит не «отдохнуть», а восстановить систему регуляции</p></div><div class="hero-photo"><picture><source media="(max-width: 900px)" srcset="hero.webp?v=3"><img src="hero.webp?v=3" alt="Наташа Сведовая" /></picture></div></div></section>
+<section class="intro"><div class="wrap"><h2>Усталость, тяга к сладкому, бессонница, проблемы с кожей — а кортизол в анализе «в норме»?</h2><p>Кортизол — не враг. Он нужен нам каждое утро, чтобы проснуться, мобилизовать энергию и адаптироваться к нагрузке.</p><p>Проблема не в самом кортизоле. Проблема в том, что система стресса застряла в режиме «мобилизация», а переключение в восстановление сломалось.</p><p>Давайте проведём мини-расследование и посмотрим, что происходит с кортизолом после того, как он сделал свою работу.</p><div class="divider"></div></div></section>
+<section class="content"><div class="wrap grid">
+<article class="section"><h3><span class="n">1.</span> ЧТО ПРОИСХОДИТ С КОРТИЗОЛОМ В ОРГАНИЗМЕ?</h3><p>Кортизол рождается в надпочечниках. Его уровень подчинён циркадному ритму: утром он высокий, чтобы Вы встали, к ночи падает, чтобы Вы уснули.</p><p>Но кортизол не должен бесконечно циркулировать в крови.</p><p>После выполнения работы он отправляется в <strong>печень.</strong> Там происходит биохимическая трансформация: кортизол превращается в водорастворимые метаболиты. Дальше путь раздваивается: основная часть уходит через почки с мочой, а меньшая — через желчь в кишечник.</p><div class="callout"><strong>Главный вывод:</strong> нормальный уровень кортизола — это не только вопрос «сколько произвели надпочечники». Это вопрос «как организм его переработал и вывел».</div></article>
+<article class="section"><h3><span class="n">2.</span> У ВАС ЕСТЬ ЭТИ ПРИЗНАКИ?</h3><p>Проверьте свой циркадный ритм и систему адаптации:</p><div class="label">Проверьте себя:</div><div class="checks"><div class="check"><span class="box"></span><span>Утром тяжело проснуться, а вечером просыпается «вторая жизнь».</span></div><div class="check"><span class="box"></span><span>Трудно уснуть, хотя тело устало.</span></div><div class="check"><span class="box"></span><span>После 8 часов сна чувствуете себя разбитой.</span></div><div class="check"><span class="box"></span><span>Без кофе, сладкого или телефона утром не начать день.</span></div></div><p>Если узнали себя — это не обязательно означает «высокий кортизол». Это сигнал, что система регуляции сбоит.</p></article>
+<article class="section"><h3><span class="n">3.</span> ПОЧЕМУ АНАЛИЗ МОЖЕТ БЫТЬ НОРМАЛЬНЫМ?</h3><p>Потому что кортизол динамичен.</p><p>Его уровень скачет от времени суток, стресса в очереди перед лабораторией, недосыпа и даже мысли о работе. Один срез крови не покажет, как работает Ваша система стресс-адаптации в динамике.</p><div class="callout"><strong>Важно:</strong> цифра в референсе не отменяет Вашего состояния. Нужно смотреть на картину целиком.</div></article>
+<article class="section"><h3><span class="n">4.</span> КОРТИЗОЛ → ГЛЮКОЗА → ТЯГА К ЕДЕ</h3><p>Кортизол мобилизует глюкозу, чтобы дать Вам энергию для реакции «бей или беги». Но если Вы не бежите от тигра, а сидите в дедлайне, эта глюкоза остаётся в крови. Организм в панике требует инсулина, а потом — новой энергии.</p><div class="label">Мини-тест:</div><div class="checks"><div class="check"><span class="box"></span><span>Утром пьёте кофе вместо еды.</span></div><div class="check"><span class="box"></span><span>Днём можете забыть поесть, вечером сметаете всё.</span></div><div class="check"><span class="box"></span><span>После стресса тянет на конкретное: шоколад, выпечка, чипсы.</span></div><div class="check"><span class="box"></span><span>Еда — главный способ успокоиться.</span></div></div><p><em>Если тяга к сладкому зависит от качества Вашего сна и уровня стресса, проблема глубже, чем «слабая сила воли».</em></p></article>
+<article class="section"><h3><span class="n">5.</span> КОРТИЗОЛ → КОЖА</h3><p>Кожа — зеркало системных сбоев. Хронический стресс бьёт по защитному барьеру и запускает скрытые воспаления.</p><p>Прыщ ≠ высокий кортизол. Сухость ≠ высокий кортизол.<br>Но связка «стресс + недосып + скачки глюкозы» всегда проявится на лице.</p><div class="label">Мини-тест:</div><div class="checks"><div class="check"><span class="box"></span><span>Кожа реагирует воспалениями на нервную неделю.</span></div><div class="check"><span class="box"></span><span>Утром лицо отёчное и уставшее.</span></div><div class="check"><span class="box"></span><span>Кожный барьер стал чувствительным, появились шелушения.</span></div></div><p><em>Крем здесь не решит проблему. Нужно чинить фундамент.</em></p></article>
+<article class="section"><h3><span class="n">6.</span> ПЕЧЕНЬ, КИШЕЧНИК И ВЫВЕДЕНИЕ МЕТАБОЛИТОВ</h3><p>Забудьте мифы про «шлаки» и «грязный кишечник, который не даёт уйти кортизолу». Биохимия точнее.</p><p>Печень — это главная лаборатория по утилизации отработанных гормонов. А кишечник и желчный пузырь — пути эвакуации. Если желчь густая, а перистальтика вялая, метаболиты задерживаются, создавая лишнюю нагрузку на систему.</p><div class="label">Проверьте конвейер:</div><div class="checks"><div class="check"><span class="box"></span><span>Тяжесть после еды, вздутие.</span></div><div class="check"><span class="box"></span><span>Стул нерегулярный.</span></div><div class="check"><span class="box"></span><span>В рационе мало клетчатки и воды.</span></div></div><p><em>Ваша задача — не «чистить» органы. Ваша задача — дать им ресурс (белок, микронутриенты, воду, движение) для бесперебойной работы.</em></p></article>
+<article class="section full"><h3><span class="n">7.</span> ТРИ ДРЕВНИЕ СИСТЕМЫ ДЛЯ ПЕРЕКЛЮЧЕНИЯ</h3><p>Вам не нужны сложные ритуалы. Нужны якоря, которые дают телу сигнал: «Мы в безопасности, можно выдыхать». Какой из трёх подходов Вам нужен больше всего?</p><div class="rituals"><div class="ritual"><strong>🌿 Аюрведа.</strong> Тёплое масло на стопы перед сном.<br>Это не про «вывод токсинов», а про глубокий тактильный ритуал, который переключает нервную систему в парасимпатику.</div><div class="ritual"><strong>🌲 Япония.</strong> Шинрин-йоку (лесная ванна). 20 минут в парке без телефона и подкастов. Просто наблюдение за природой снижает уровень стрессовых маркеров.</div><div class="ritual"><strong>🌬️ Китай.</strong> Цигун. 5–10 минут медленных движений в связке с дыханием. Это работает лучше, чем час изматывающего кардио на фоне недосыпа.</div></div></article>
+<article class="section full"><h3><span class="n">8.</span> БАЗОВЫЙ ПРОТОКОЛ ВОССТАНОВЛЕНИЯ</h3><p>Забудьте про десятки БАДов. Начните с физиологии, которая возвращает телу ритм.</p><div class="protocol"><div class="protocol-item"><div class="protocol-title">☀ УТРО</div><div>Дневной свет в глаза в первые 30 минут после пробуждения. Белковый завтрак. Кофе — только после еды, не вместо сна.</div></div><div class="protocol-item"><div class="protocol-title">● ДЕНЬ</div><div>Ходьба без цели. Вода. Регулярные приёмы пищи, чтобы не было скачков глюкозы.</div></div><div class="protocol-item"><div class="protocol-title">☾ ВЕЧЕР</div><div>Приглушённый свет за 2 часа до сна. Тепло (ванна или душ). Медленное дыхание. Стабильное время отбоя.</div></div></div></article>
+<article class="section full"><h3><span class="n">9.</span> ФИНАЛЬНАЯ ДИАГНОСТИКА</h3><p>Ответьте себе честно:</p><div class="checks"><div class="check"><span class="box"></span><span>Я просыпаюсь отдохнувшей.</span></div><div class="check"><span class="box"></span><span>Моё тело умеет расслабляться без телефона и еды.</span></div><div class="check"><span class="box"></span><span>После выходного я чувствую себя лучше, а не разбитой.</span></div><div class="check"><span class="box"></span><span>Я понимаю сигналы своего тела.</span></div></div><div class="callout orange">Если большинство ответов — «нет», Вам нужно работать не с одной цифрой кортизола. Вам нужно восстанавливать систему целиком.</div></article>
+<article class="section full vedanie"><h3>ИМЕННО ЭТО МЫ БУДЕМ ДЕЛАТЬ В ВЕДАНИЕ</h3><p>В сентябре в пространстве ВЕДАНИЕ мы пройдём путь от биохимии стресса до реальных изменений в теле. Сон, печень, кишечник, гормональный баланс, кожа и энергия — мы соберём это в единую работающую схему.</p><p>Я поделюсь авторскими природными протоколами и тем, как соединить древние практики с современным пониманием физиологии.</p><p>Не для того, чтобы просто сказать Вам: «меньше стрессуйте и больше спите».</p><div class="emphasis">А чтобы Вы начали понимать:<br>ЧТО ПРОИСХОДИТ В ВАШЕМ ТЕЛЕ<br>ПОЧЕМУ ЭТО ПРОИСХОДИТ<br>И ЧТО МОЖНО С ЭТИМ ДЕЛАТЬ</div><p>Первые изменения в самочувствии многие замечают уже в первые дни работы с режимом, сном и питанием.</p><p>Если Вы узнали себя в этом гайде — приходите в ВЕДАНИЕ.<br>Там начинается следующий уровень: не просто знать, что такое кортизол, а научиться читать сигналы собственного организма и выстраивать восстановление как систему.</p><div class="cta-row"><a class="cta" href="https://vedanie.urban-queen.com">ПЕРЕЙТИ В ВЕДАНИЕ</a></div></article>
+</div><div class="wrap"><section class="webinars"><h3>ОТКРЫТЫЕ ВЕБИНАРЫ</h3><div class="webinar"><div class="webinar-time">27 августа, 18:00 мск</div><div class="webinar-text">«Что кортизол на самом деле делает с Вашим телом и кожей? Часть 1. О сосудах, нервной системе, почках и гормонах»</div></div><div class="webinar"><div class="webinar-time">3 сентября, 18:00</div><div class="webinar-text">«Что кортизол на самом деле делает с Вашим телом и кожей? Часть 2. О гормонах, либидо, фертильности, старении, отёках и пигментации»</div></div></section><div class="footer"><a href="https://vedanie.urban-queen.com">vedanie.urban-queen.com</a></div></div></section>
 </main>
 </body>
 </html>

@@ -88,6 +88,8 @@ a { color: inherit; text-decoration: none; }
 .wide-type { display: block; margin-bottom: 8px; color: var(--accent-soft); font-size: 8px; line-height: 1.2; font-weight: 800; letter-spacing: .09em; }
 .wide-link strong { display: block; font: 700 clamp(25px, 7vw, 37px)/1.02 "Montserrat", sans-serif; letter-spacing: -.025em; }
 .wide-text { display: block; margin-top: 9px; color: rgb(255 253 248 / 69%); font-size: 12px; line-height: 1.4; }
+.wide-text--program-date { color: var(--white); font-size: 16px; font-weight: 700; }
+.wide-date-inline { display: block; margin-top: 4px; color: #f0ad70; font-size: 20px; line-height: 1.2; font-weight: 800; }
 .community .wide-text { color: #5a625b; }
 .wide-date { display: block; width: fit-content; margin-top: 11px; padding: 7px 9px; border-radius: 5px; background: var(--accent); color: #fff; font-size: 10px; font-weight: 800; }
 .wide-action { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: min(100%, 300px); margin-top: 18px; color: inherit; font-size: 10px; font-weight: 800; letter-spacing: .035em; }
@@ -120,6 +122,8 @@ a { color: inherit; text-decoration: none; }
   .wide-number { font-size: 33px; }
   .wide-type { font-size: 10px; }
   .wide-text { font-size: 14px; }
+  .wide-text--program-date { font-size: 16px; }
+  .wide-date-inline { font-size: 22px; }
   .wide-action { font-size: 11px; }
   .footer { padding: 38px 20px 42px; }
 }
@@ -142,6 +146,8 @@ a { color: inherit; text-decoration: none; }
   .offer-action { font-size: 8px; }
   .offer-action b { flex-basis: 26px; width: 26px; height: 26px; }
   .wide-link { padding-left: 18px; padding-right: 18px; }
+  .wide-text--program-date { font-size: 14px; }
+  .wide-date-inline { font-size: 18px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

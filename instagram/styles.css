@@ -73,9 +73,9 @@ a { color: inherit; text-decoration: none; }
 .offer-date { width: fit-content; max-width: 100%; margin-top: 15px; padding: 10px 11px; border-radius: 5px; background: var(--accent); color: #fff; font-size: 11px; line-height: 1.2; font-weight: 800; letter-spacing: .015em; }
 .visual-gut .offer-text--program-date { color: var(--white); font-size: 18px; line-height: 1.35; font-weight: 700; }
 .offer-text--program-date strong { display: inline-block; margin-top: 4px; color: #f0ad70; font-size: 21px; }
-.offer-action { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; margin-top: auto; padding-top: 16px; color: inherit; font-size: 9px; line-height: 1.2; font-weight: 800; letter-spacing: .025em; }
-.offer-action b, .wide-action b { flex: 0 0 28px; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid rgb(217 119 43 / 60%); border-radius: 50%; color: inherit; background: linear-gradient(145deg, rgb(217 119 43 / 21%), rgb(217 119 43 / 5%)); font-size: 14px; transition: transform 180ms ease, background 180ms ease; }
-.offer:hover .offer-action b, .wide-link:hover .wide-action b { transform: translateX(2px); background: rgb(217 119 43 / 26%); }
+.offer-action { display: flex; align-items: center; justify-content: center; gap: 10px; width: fit-content; max-width: 100%; margin-top: auto; padding: 11px 14px; border-radius: 6px; background: var(--accent); color: #fff; font-size: 9px; line-height: 1.2; font-weight: 800; letter-spacing: .025em; }
+.offer-action b, .wide-action b { display: inline-block; color: inherit; font-size: 14px; line-height: 1; transition: transform 180ms ease; }
+.offer:hover .offer-action b, .wide-link:hover .wide-action b { transform: translateX(3px); }
 .gut-grid .guide { min-height: 255px; }
 .gut-grid > .program { min-height: 230px; }
 .gut-grid > .program strong { font-size: clamp(25px, 7vw, 37px); line-height: 1.02; }
@@ -92,7 +92,7 @@ a { color: inherit; text-decoration: none; }
 .wide-date-inline { display: block; margin-top: 4px; color: #f0ad70; font-size: 20px; line-height: 1.2; font-weight: 800; }
 .community .wide-text { color: #5a625b; }
 .wide-date { display: block; width: fit-content; margin-top: 11px; padding: 7px 9px; border-radius: 5px; background: var(--accent); color: #fff; font-size: 10px; font-weight: 800; }
-.wide-action { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: min(100%, 300px); margin-top: 18px; color: inherit; font-size: 10px; font-weight: 800; letter-spacing: .035em; }
+.wide-action { display: flex; align-items: center; justify-content: center; gap: 10px; width: fit-content; max-width: 100%; margin-top: 18px; padding: 12px 16px; border-radius: 6px; background: var(--accent); color: #fff; font-size: 10px; line-height: 1.2; font-weight: 800; letter-spacing: .035em; }
 
 .footer { display: grid; grid-template-columns: 42px minmax(0, 1fr); gap: 14px; margin-top: 12px; padding: 30px 18px 34px; border-top: 1px solid var(--line); }
 .footer img { width: 42px; height: 42px; }
@@ -144,7 +144,6 @@ a { color: inherit; text-decoration: none; }
   .visual-gut .offer-text--program-date { font-size: 16px; }
   .offer-text--program-date strong { font-size: 18px; }
   .offer-action { font-size: 8px; }
-  .offer-action b { flex-basis: 26px; width: 26px; height: 26px; }
   .wide-link { padding-left: 18px; padding-right: 18px; }
   .wide-text--program-date { font-size: 14px; }
   .wide-date-inline { font-size: 18px; }

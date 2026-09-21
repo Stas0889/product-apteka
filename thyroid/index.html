@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183d38">
+  <meta name="description" content="17 информационных вопросов, чтобы внимательнее посмотреть на изменения самочувствия и получить персональный профиль в Telegram.">
+  <meta property="og:title" content="Щитовидная железа — 17 вопросов">
+  <meta property="og:description" content="Короткий информационный тест о сочетании изменений самочувствия. Не медицинская диагностика.">
+  <meta property="og:type" content="website">
+  <title>Щитовидная железа — 17 вопросов</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.bundle.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="В начало страницы">
+        <img class="brand-mark" src="assets/logo-white.png" alt="" width="36" height="36">
+        <span class="brand-name">ВЕДАНИЕ</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="intro">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <h1><span>ВЕС.</span><span class="accent-word">ОТЁКИ.</span><span>ВОЛОСЫ.</span><span class="olive-word">УСТАЛОСТЬ.</span><span>СЕРДЦЕ.</span><span>КИШЕЧНИК.</span></h1>
+          <p class="hero-lead">НЕ ИЩИТЕ ПРИЧИНУ КАЖДОГО СИМПТОМА ОТДЕЛЬНО,<br>ПОКА НЕ ОТВЕТИТЕ НА ЭТИ 17 ВОПРОСОВ.</p>
+          <div class="hero-actions">
+            <button class="button button-accent" id="startButton" type="button">НАЧАТЬ <span>→</span></button>
+            <p class="quiet-note">2 минуты, которые помогут посмотреть на эти изменения как на одну картину.<br>Ответы не сохраняются</p>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-ring art-ring-one"></div>
+          <div class="art-ring art-ring-two"></div>
+          <div class="art-core"><span>17</span><small>вопросов<br>о Вашем<br>самочувствии</small></div>
+          <span class="art-caption art-caption-bottom">а повод прислушаться</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="prelude" id="prelude" hidden>
+      <div class="shell prelude-grid">
+        <p class="eyebrow"><span></span> ПЕРЕД ТЕСТОМ</p>
+        <div class="prelude-copy">
+          <p>Мы привыкли разбирать тело по частям.</p>
+          <p>Вес изменился — меняем питание.<br>Волосы выпадают — покупаем витамины.<br>Лицо отекает — убираем соль.<br>Запор — занимаемся кишечником.<br>Сердце колотится — списываем на стресс.<br>Нет сил — пытаемся больше спать.</p>
+          <p>Но иногда важен не один симптом.</p>
+          <p>Важно то, что <strong>НЕСКОЛЬКО изменений появились одновременно.</strong></p>
+          <p>Ответьте на 17 вопросов.</p>
+          <p>Не пытайтесь пока поставить себе диагноз.<br>Просто отмечайте то, что действительно стало происходить с вами в последнее время.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-section" id="quiz" hidden>
+      <div class="shell quiz-shell">
+        <div class="quiz-sidebar">
+          <p class="eyebrow light"><span></span> ВАШ ПУТЬ</p>
+          <h2>Вопрос за <em>вопросом.</em></h2>
+          <p>Отвечайте так, как ощущаете это сейчас. Здесь нет правильных или неправильных ответов.</p>
+        </div>
+        <div class="quiz-card">
+          <div class="quiz-meta"><span id="questionNumber">Q1 / 17</span><span class="progress-track"><i id="progress"></i></span></div>
+          <div class="question-body">
+            <h3 id="question"></h3>
+            <div class="answers" id="answers"></div>
+          </div>
+          <div class="quiz-footer">
+            <button class="back-button" id="backButton" type="button">← Назад</button>
+            <button class="button button-dark" id="nextButton" type="button" disabled>Следующий вопрос</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="result-section" id="result" hidden>
+      <div class="shell result-shell">
+        <p class="eyebrow"><span></span> ВАШИ ОТВЕТЫ СОБРАНЫ</p>
+        <div class="result-grid">
+          <div class="result-number">17<span>/17</span></div>
+          <div class="result-copy">
+            <h2>ГОТОВО. Я СОБРАЛА<br>ВАШИ 17 ОТВЕТОВ.</h2>
+            <p>В них уже виден определённый профиль.</p>
+            <p><strong>Получите свой результат в Telegram:</strong></p>
+            <ul>
+              <li>какой профиль получился по вашим ответам;</li>
+              <li>какие симптомы сложились в одну картину;</li>
+              <li>на что обратить внимание;</li>
+              <li>что имеет смысл проверить дальше.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="result-bottom">
+          <p>17 вопросов закончились. Теперь самое интересное — посмотреть не на каждый ваш ответ отдельно, а на то, какую картину они образовали вместе.</p>
+          <p class="result-ready">Ваш персональный результат уже готов в Telegram.</p>
+          <a class="button button-accent" id="telegramButton" href="#" target="_blank" rel="noopener noreferrer">ПОЛУЧИТЬ МОЙ ПРОФИЛЬ ОТВЕТОВ <span>→</span></a>
+          <p class="configuration-error" id="configurationError" hidden></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="disclaimer-section" id="disclaimer" hidden>
+      <div class="shell disclaimer-copy">
+        <p class="eyebrow"><span></span> ВАЖНО</p>
+        <div>
+          <p>Этот тест не ставит диагноз.</p>
+          <p>Усталость, изменение веса, выпадение волос, отёчность, сердцебиение, изменения кишечника и другие перечисленные признаки могут возникать по множеству совершенно разных причин.</p>
+          <p>Даже большое количество совпадений не означает автоматически заболевание щитовидной железы.</p>
+          <p>Но сочетание нескольких изменений — хороший повод перестать рассматривать их только по отдельности и при необходимости обсудить с врачом обследование щитовидной железы.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-identity">
+        <strong>ВЕДАНИЕ / URBAN QUEEN</strong>
+        <span>ИП Н. Д. Сведовая ОГРН 316502700063248</span>
+        <a href="mailto:N.Svedovaya@urban-queen.com">N.Svedovaya@urban-queen.com</a>
+      </div>
+      <nav class="footer-links" aria-label="Правовая информация">
+        <a href="https://urbanqueen.justclick.ru/pub_of">Публичная оферта</a>
+        <a href="https://urbanqueen.justclick.ru/pub_of">Согласие на получение рекламы</a>
+        <a href="https://urbanqueen.justclick.ru/politikacofiden">Политика персональных данных</a>
+        <a href="https://urban-queen.com/soglasie-na-obrabotku-personalnyh-danny">Согласие на обработку персональных данных</a>
+      </nav>
+      <p class="footer-note">Информационный материал. Не является медицинской рекомендацией.</p>
+    </div>
+  </footer>
+</body>
+</html>

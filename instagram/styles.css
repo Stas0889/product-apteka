@@ -23,6 +23,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { min-width: 320px; background: var(--background); scroll-behavior: smooth; }
 body { margin: 0; background: var(--background); color: var(--white); font-family: "Manrope", "Segoe UI", Arial, sans-serif; }
 a { color: inherit; text-decoration: none; }

@@ -93,8 +93,6 @@ button, input { font: inherit; }
 
 .form-shell { padding: clamp(28px, 4vw, 46px); border: 1px solid var(--line); border-radius: 8px; background: var(--paper); box-shadow: 0 24px 60px rgb(36 53 43 / 10%); }
 .form-shell h3 { font-size: 26px; line-height: 1.3; text-align: center; color: #00787a; }
-.registration-delivery-notice { margin: 20px 0 0; padding: 12px 14px; border-left: 3px solid var(--gold); background: #f7ecd5; color: var(--ink); font-size: 14px; line-height: 1.6; }
-.registration-delivery-notice a { color: #00787a; font-weight: 700; }
 .form-shell form { display: grid; gap: 18px; margin-top: 28px; }
 .form-shell label > span:first-child { display: block; margin-bottom: 8px; color: #34443c; font-size: 14px; font-weight: 400; text-transform: uppercase; }
 .form-shell input[type="text"], .form-shell input[type="email"] { width: 100%; min-height: 54px; padding: 13px 15px; border: 1px solid #b8beb9; border-radius: 4px; background: #fff; color: var(--ink); outline: none; }

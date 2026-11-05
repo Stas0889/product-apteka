@@ -25,6 +25,6 @@ body .hero h1 { font-size: 52px; }
   html body .hero { background: #073d40; }
   html body .hero h1 { font-size: 30px; }
   html body .hero-content { padding: 36px 0 30px; }
-  html body .hero::after { aspect-ratio: 1122 / 1402; background: url('assets/hero-mobile-teal.webp') center top / contain no-repeat; }
+  html body .hero::after { aspect-ratio: 1 / 1; background: url('assets/hero-mobile-teal.webp') center top / 100% auto no-repeat; }
 }
 @media (max-width: 360px) { html body .hero h1 { font-size: 25px; } }

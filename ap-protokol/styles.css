@@ -17,3 +17,14 @@
   html body .hero h1 { font-size: 25px; }
   body .header { flex-wrap: wrap; justify-content: center; padding: 10px 0; gap: 8px; }
 }
+body .hero { background: linear-gradient(90deg, rgb(10 28 17 / 35%), transparent 65%), url('assets/hero-wide.webp') center top / cover no-repeat; }
+body .hero-content { padding-right: 44%; }
+body .hero h1 { font-size: 52px; }
+@media (min-width: 601px) and (max-width: 1000px) { body .hero h1 { font-size: 36px; } body .hero-content { padding-right: 38%; } }
+@media (max-width: 600px) {
+  html body .hero { background: #073d40; }
+  html body .hero h1 { font-size: 30px; }
+  html body .hero-content { padding: 36px 0 30px; }
+  html body .hero::after { aspect-ratio: 1122 / 1402; background: url('assets/hero-mobile.webp') center top / contain no-repeat; }
+}
+@media (max-width: 360px) { html body .hero h1 { font-size: 25px; } }

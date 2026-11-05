@@ -28,3 +28,12 @@ body .hero h1 { font-size: 52px; }
   html body .hero::after { aspect-ratio: 1 / 1; background: linear-gradient(to bottom, #073d40 0%, rgb(7 61 64 / 75%) 5%, rgb(7 61 64 / 25%) 12%, transparent 22%), url('assets/hero-mobile-teal.webp') center top / 100% auto no-repeat; }
 }
 @media (max-width: 360px) { html body .hero h1 { font-size: 25px; } }
+#club .offer-heading { font-size: 64px; line-height: 1.1; margin: 0 0 24px; color: #fff; }
+#club .offer-intro { max-width: 740px; font-size: 24px; line-height: 1.5; color: #d0e5df; margin-bottom: 36px; }
+#club .offer-program { font-size: 32px; line-height: 1.3; margin: 0 0 10px; color: #fff; }
+#club .offer-brand { color: #afd8cd; margin-bottom: 0; }
+@media (max-width: 600px) {
+  #club .offer-heading { font-size: 40px; margin-bottom: 20px; }
+  #club .offer-intro { font-size: 20px; margin-bottom: 30px; }
+  #club .offer-program { font-size: 25px; }
+}

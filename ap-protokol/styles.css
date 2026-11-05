@@ -37,3 +37,4 @@ body .hero h1 { font-size: 52px; }
   #club .offer-intro { font-size: 20px; margin-bottom: 30px; }
   #club .offer-program { font-size: 25px; }
 }
+.webinar-poster { width: 100%; height: auto; border-radius: 8px; margin: 28px 0; }
